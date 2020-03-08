@@ -36,7 +36,8 @@ const pinDirectoryToIPFS = (pinataApiKey, pinataSecretApiKey) => {
       })
       .then(function(response) {
         //handle response here
-        console.log(response);
+        // console.log(response.data);
+        console.log(response.data.IpfsHash);
         console.log("DONE!");
       })
       .catch(function(error) {

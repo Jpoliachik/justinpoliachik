@@ -37,6 +37,15 @@ jobs:
       - name: Build
         run: hugo
 
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "10.x"
+      - run: cd ./node && npm install
+      - run: node ./node/uploadPinata.js
+        env:
+          PINATA_API_KEY: ${{ secrets.PINATA_API_KEY }}
+          PINATA_API_SECRET_KEY: ${{ secrets.PINATA_API_SECRET_KEY }}
+
       - uses: actions/upload-artifact@v1
         with:
           name: public

@@ -5,7 +5,7 @@ const FormData = require("form-data");
 const recursive = require("recursive-fs");
 const basePathConverter = require("base-path-converter");
 
-export const pinDirectoryToIPFS = (pinataApiKey, pinataSecretApiKey) => {
+const pinDirectoryToIPFS = (pinataApiKey, pinataSecretApiKey) => {
   const url = `https://api.pinata.cloud/pinning/pinFileToIPFS`;
   const src = "../public";
 

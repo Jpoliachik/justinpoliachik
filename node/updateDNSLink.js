@@ -30,7 +30,7 @@ const updateDNSLink = ipfsHash => {
     HostedZoneId: hostedZoneId,
   };
 
-  route53.changeResourceRecordSets({}, (err, data) => {
+  route53.changeResourceRecordSets(params, (err, data) => {
     if (err) {
       throw new Error(err);
     } else {

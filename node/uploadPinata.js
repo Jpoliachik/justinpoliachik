@@ -7,7 +7,7 @@ const basePathConverter = require("base-path-converter");
 
 const pinDirectoryToIPFS = (pinataApiKey, pinataSecretApiKey) => {
   const url = `https://api.pinata.cloud/pinning/pinFileToIPFS`;
-  const src = "../public";
+  const src = "./public";
 
   //we gather the files from a local directory in this example, but a valid readStream is all that's needed for each file in the directory.
   recursive.readdirr(src, function(err, dirs, files) {

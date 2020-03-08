@@ -1,0 +1,18 @@
+baseURL = ""
+languageCode = "en-us"
+title = "Justin Poliachik"
+theme = "yinyang-jp"
+relativeURLs = true
+
+[params]
+headTitle = "Justin Poliachik"
+
+[[params.socials]]
+name = "Github"
+link = "https://github.com/jpoliachik"
+[[params.socials]]
+name = "Twitter"
+link = "https://twitter.com/poli_J_"
+[[params.socials]]
+name = "YouTube"
+link = "https://youtube.com/user/JustinPoliachik"

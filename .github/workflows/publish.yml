@@ -41,7 +41,7 @@ jobs:
         with:
           node-version: "12.x"
       - run: cd ./node && npm install
-      - run: node ./node/uploadPinata.js
+      - run: node ./node/uploadPinata.js --unhandled-rejections=strict
         env:
           PINATA_API_KEY: ${{ secrets.PINATA_API_KEY }}
           PINATA_API_SECRET_KEY: ${{ secrets.PINATA_API_SECRET_KEY }}

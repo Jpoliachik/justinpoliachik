@@ -7,6 +7,7 @@ const updateDNSLink = ipfsHash => {
   const hostedZoneId = process.env.ROUTE53_HOSTED_ZONE_ID;
 
   console.log("updating DNSLink txt to:", dnsLinkValue);
+  console.log("hostedzoneid: ", hostedZoneId);
 
   var params = {
     ChangeBatch: {

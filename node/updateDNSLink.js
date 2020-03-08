@@ -1,6 +1,6 @@
 const AWS = require("aws-sdk");
 
-export const updateDNSLink = ipfsHash => {
+const updateDNSLink = ipfsHash => {
   const route53 = new AWS.Route53();
 
   const dnsLinkValue = `"dnslink=/ipfs/${ipfsHash}"`;
@@ -38,4 +38,8 @@ export const updateDNSLink = ipfsHash => {
       console.log("DONE!");
     }
   });
+};
+
+module.exports = {
+  updateDNSLink,
 };

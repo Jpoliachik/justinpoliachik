@@ -1,3 +1,5 @@
+import { updateDNSLink } from "./updateDNSLink";
+
 //imports needed for this function
 const axios = require("axios");
 const fs = require("fs");
@@ -5,13 +7,13 @@ const FormData = require("form-data");
 const recursive = require("recursive-fs");
 const basePathConverter = require("base-path-converter");
 
-const pinDirectoryToIPFS = (pinataApiKey, pinataSecretApiKey) => {
+export const pinDirectoryToIPFS = (pinataApiKey, pinataSecretApiKey) => {
   const url = `https://api.pinata.cloud/pinning/pinFileToIPFS`;
   const src = "./public";
 
   //we gather the files from a local directory in this example, but a valid readStream is all that's needed for each file in the directory.
   recursive.readdirr(src, function(err, dirs, files) {
-    console.log("readdir files: ", files);
+    console.log("Files to upload: ", files);
     let data = new FormData();
     files.forEach(file => {
       //for each file stream, we need to include the correct relative file path
@@ -36,9 +38,14 @@ const pinDirectoryToIPFS = (pinataApiKey, pinataSecretApiKey) => {
       })
       .then(function(response) {
         //handle response here
-        // console.log(response.data);
-        console.log(response.data.IpfsHash);
+        const ipfsHash = response.data.IpfsHash;
+        if (!ipfsHash) {
+          throw new Error("no ipfs hash found in response");
+        }
+        console.log(response.data);
         console.log("DONE!");
+
+        updateDNSLink(ipfsHash);
       })
       .catch(function(error) {
         //handle error here

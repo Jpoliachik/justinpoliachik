@@ -11,6 +11,7 @@ const pinDirectoryToIPFS = (pinataApiKey, pinataSecretApiKey) => {
 
   //we gather the files from a local directory in this example, but a valid readStream is all that's needed for each file in the directory.
   recursive.readdirr(src, function(err, dirs, files) {
+    console.log("readdir files: ", files);
     let data = new FormData();
     files.forEach(file => {
       //for each file stream, we need to include the correct relative file path

@@ -48,8 +48,11 @@ const pinDirectoryToIPFS = (pinataApiKey, pinataSecretApiKey) => {
         updateDNSLink(ipfsHash);
       })
       .catch(function(error) {
-        //handle error here
-        throw new Error(error);
+        // node hack, setTimeout to throw error so
+        // it isn't caught by a promise
+        setTimeout(() => {
+          throw new Error(error);
+        });
       });
   });
 };

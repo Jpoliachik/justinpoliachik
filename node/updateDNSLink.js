@@ -7,6 +7,8 @@ const updateDNSLink = ipfsHash => {
 
   console.log("updating DNSLink txt to:", dnsLinkValue);
 
+  throw new Error("test error");
+
   var params = {
     ChangeBatch: {
       Changes: [

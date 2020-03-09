@@ -19,7 +19,7 @@ const updateDNSLink = ipfsHash => {
                 Value: dnsLinkValue,
               },
             ],
-            TTL: 300,
+            TTL: 60,
             Type: "TXT",
           },
         },

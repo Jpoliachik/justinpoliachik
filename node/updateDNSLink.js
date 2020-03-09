@@ -4,10 +4,8 @@ const updateDNSLink = ipfsHash => {
   const route53 = new AWS.Route53();
 
   const dnsLinkValue = `"dnslink=/ipfs/${ipfsHash}"`;
-  const hostedZoneId = process.env.ROUTE53_HOSTED_ZONE_ID;
 
   console.log("updating DNSLink txt to:", dnsLinkValue);
-  console.log("hostedzoneid: ", hostedZoneId);
 
   var params = {
     ChangeBatch: {
@@ -28,7 +26,7 @@ const updateDNSLink = ipfsHash => {
       ],
       Comment: "Update from GitHub Action",
     },
-    HostedZoneId: hostedZoneId,
+    HostedZoneId: "Z2ZNPUAQTMLOMI",
   };
 
   route53.changeResourceRecordSets(params, (err, data) => {

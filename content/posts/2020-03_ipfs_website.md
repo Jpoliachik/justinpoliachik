@@ -1,5 +1,5 @@
 ---
-title: "Publishing my Website on IPFS - Intro to the InterPlanetary File System"
+title: "Publishing my Website on IPFS"
 date: 2020-03-11T17:30:00-04:00
 draft: false
 ---

@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "aws-sdk": "^2.635.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "base-path-converter": "^1.0.2",
     "form-data": "^3.0.0",
     "recursive-fs": "^1.1.2"

@@ -1,10 +1,10 @@
 ---
-title: "The Flytrapps Story - Lessons Learned from our Failed Startup"
+title: "The Flytrapps Story - Lessons Learned from a Failed Startup"
 date: 2021-03-03T17:30:00-04:00
 draft: false
 ---
 
-# The Flytrapps Story - Lessons Learned from our Failed Startup
+# The Flytrapps Story - Lessons Learned from a Failed Startup
 
 Between 2017 and 2019 I worked with a close group of friends on a software startup named Flytrapps. We built multiple products (4 different apps in total) and received glowing user feedback, but were never able to find our way to revenue.
 

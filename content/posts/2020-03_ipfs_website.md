@@ -196,3 +196,9 @@ Next steps:
 - Create a blog. I'm planning on using Hugo as a static site generator for Markdown posts.
 - Host code on GitHub
 - Use GitHub actions to publish updates to site, including updating the DNSLink record.
+
+### Update (2021-03-04):
+
+Up until today this blog was running on IPFS, hosted on Pinata, and used GitHub actions to publish updates. Today I switched my blog to be hosted on S3.
+I wasn't able to find an easy way of getting SSL certificates installed while redirecting my website through an IPFS Gateway. I'm sure this is possible - and I saw that Cloudfront helps with this - but my website was already setup in AWS Route53, so transitioning to Cloudfront was an additional hurdle. The simplest method was to switch to using S3 to host my static content - and this also hedges against future complexity that I might run into. (I am still a bit of a web developer n00b after all).
+No hard feelings IPFS - it was fun. And maybe I'll return someday!

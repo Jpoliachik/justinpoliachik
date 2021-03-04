@@ -15,6 +15,10 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
+    env:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -37,16 +41,22 @@ jobs:
       - name: Build
         run: hugo
 
-      - uses: actions/setup-node@v1
-        with:
-          node-version: "12.x"
-      - run: cd ./node && npm install
-      - run: node ./node/uploadPinata.js --unhandled-rejections=strict
-        env:
-          PINATA_API_KEY: ${{ secrets.PINATA_API_KEY }}
-          PINATA_API_SECRET_KEY: ${{ secrets.PINATA_API_SECRET_KEY }}
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      # - uses: actions/setup-node@v1
+      #   with:
+      #     node-version: "12.x"
+      # - run: cd ./node && npm install
+
+      - name: Deploy to S3
+          uses: reggionick/s3-deploy@v3
+          with:
+            folder: public
+            bucket: ${{ secrets.S3_BUCKET }}
+            bucket-region: ${{ secrets.S3_BUCKET_REGION }}
+            dist-id: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
+            invalidation: /
+            delete-removed: true
+            no-cache: true
+            private: true
 
       - uses: actions/upload-artifact@v1
         with:

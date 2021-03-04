@@ -47,16 +47,16 @@ jobs:
       # - run: cd ./node && npm install
 
       - name: Deploy to S3
-          uses: reggionick/s3-deploy@v3
-          with:
-            folder: public
-            bucket: ${{ secrets.S3_BUCKET }}
-            bucket-region: ${{ secrets.S3_BUCKET_REGION }}
-            dist-id: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
-            invalidation: /
-            delete-removed: true
-            no-cache: true
-            private: true
+        uses: reggionick/s3-deploy@v3
+        with:
+          folder: public
+          bucket: ${{ secrets.S3_BUCKET }}
+          bucket-region: ${{ secrets.S3_BUCKET_REGION }}
+          dist-id: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
+          invalidation: /
+          delete-removed: true
+          no-cache: true
+          private: true
 
       - uses: actions/upload-artifact@v1
         with:

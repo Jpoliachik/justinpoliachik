@@ -1,6 +1,6 @@
 ---
 title: "Labor Day Mixtape (Live Mix)"
-date: 2021-09-06T13:30:00-04:00
+date: 2021-09-06T12:30:00-04:00
 draft: false
 ---
 

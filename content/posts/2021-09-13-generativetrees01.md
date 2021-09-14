@@ -1,6 +1,6 @@
 ---
 title: "Generative Trees (p5js)"
-date: 2021-09-013T23:00:00-04:00
+date: 2021-09-13T23:00:00-04:00
 draft: false
 ---
 
@@ -8,7 +8,7 @@ Generative trees using p5.js
 
 ![generative trees](/img/2021-09-13-generativetrees1.png)
 
-I'm really happy with how these turned out, given only an hour or so of tinkering.
+I'm really happy with how these turned out. Honestly it's pretty cool this is possible given <50 lines of code.
 I plan to expand this experiment more in the future.
 
 Paste the code below into the p5js editor at `[editor.p5js.org](https://editor.p5js.org/)` and hit "play" a few times to generate results.

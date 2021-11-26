@@ -64,5 +64,3 @@ function randomBetween(low, high) {
 }
 
 ```
-
-Test update!

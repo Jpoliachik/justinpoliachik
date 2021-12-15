@@ -1,8 +1,9 @@
 import Head from "next/head";
+import SectionHomeHeader from "../components/SectionHomeHeader";
 
 export default function Home() {
   return (
-    <div>
+    <div className="flex flex-col items-center justify-center min-h-screen py-2">
       <Head>
         <title>Justin Poliachik</title>
         <link
@@ -14,9 +15,7 @@ export default function Home() {
       </Head>
 
       <div>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <SectionHomeHeader />
 
         <p className="description">
           Get started by editing <code>pages/index.js</code>

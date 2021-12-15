@@ -1,30 +1,22 @@
-import HomeProfilePicture from "../HomeProfilePicture";
-import HomeSocialLinks from "../HomeSocialLinks";
-import Link from "../../Link";
-import classes from "../../../lib/classes";
-import containerStyles from "../../../styles/HomeContainer.module.css";
-import styles from "../../../styles/HomeHeaderSection.module.css";
+import ProfilePic from "./ProfilePic";
+import SocialLinks from "./SocialLinks";
 
 export default function SectionHomeHeader() {
   return (
-    <div className={classes(styles.container, containerStyles.container)}>
-      <div className={classes(styles.innerContainer, containerStyles.innerContainer)}>
-        <div className={styles.column1}>
-          <div className={styles.title}>Justin Poliachik</div>
-          <div className={styles.description}>
+    <div className="flex items-center space-x-4 bg-emerald-100">
+      <div className="flex flex-col">
+        <div>
+          <div className="text-lg font-sans">Justin Poliachik</div>
+          <div className="text-base font-sans">
             <div>
               Working on something new
-              <br /> Creator of <Link href="#projects">side projects</Link> &#x1f4bb;
-              <br /> Check out my <Link href="#favorites">favorites</Link> &#127812;
+              <br /> Creator of asdf
+              <br /> Check out my
             </div>
           </div>
-          <div className={styles.socialLinks}>
-            <HomeSocialLinks color="black" />
-          </div>
+          <SocialLinks />
         </div>
-        <div className={styles.profilePicture}>
-          <HomeProfilePicture />
-        </div>
+        <ProfilePic />
       </div>
     </div>
   );

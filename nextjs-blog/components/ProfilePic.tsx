@@ -1,7 +1,7 @@
 export default function ProfilePic() {
   return (
     <div>
-      <img className="h-12 w-12" src="/images/profilepic.jpeg" alt="Profile Picture" />
+      <img className="h-52 w-52 rounded-full" src="/images/profilepic.jpeg" alt="Profile Picture" />
     </div>
   );
 }

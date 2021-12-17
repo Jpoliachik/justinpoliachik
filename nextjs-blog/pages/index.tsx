@@ -3,7 +3,7 @@ import SectionHomeHeader from "../components/SectionHomeHeader";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div className="flex flex-col">
       <Head>
         <title>Justin Poliachik</title>
         <link

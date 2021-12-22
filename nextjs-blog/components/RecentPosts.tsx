@@ -1,7 +1,7 @@
 export const RecentPosts = () => {
   return (
     <div>
-      <div className="text-2xl font-serif text-gray-400">Recent Posts</div>
+      <div className="text-xl font-serif text-gray-400">Recent Posts</div>
       <div className="my-2 space-y-1">
         <PostLink title={"How I backup my old dev projects"} date={"Dec 11 2021"} />
         <PostLink

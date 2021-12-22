@@ -9,7 +9,7 @@ import { RecentPosts } from "../components/RecentPosts";
 export default function Home() {
   return (
     <html lang="en">
-      <head>
+      <Head>
         <title>Justin Poliachik</title>
         <link
           rel="icon"
@@ -19,7 +19,7 @@ export default function Home() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,700&display=swap" rel="stylesheet" />
-      </head>
+      </Head>
       <body className="text-gray-800">
         <nav id="header" className="sticky w-full z-10 top-0">
           <div className="w-full h-20 bg-white justify-center border-b border-gray-200">
@@ -40,7 +40,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="w-full h-24 bg-gray-200 justify-center">
+        <div className="w-full h-24 bg-gray-100 justify-center">
           <div className="h-full w-full md:max-w-3xl mx-auto px-4">
             <MainFooter />
           </div>

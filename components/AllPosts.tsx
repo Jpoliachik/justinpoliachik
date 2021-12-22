@@ -30,7 +30,7 @@ const PostEntry = (props: { post: PostSummary }) => {
   const dateString = format(new Date(props.post.date), "MMM dd");
   return (
     <a
-      href={`posts/${props.post.id}`}
+      href={props.post.link}
       className="flex flex-row font-sans font-semibold items-center no-underline hover:underline"
     >
       <div className="text-left w-20 md:w-32">{dateString}</div>

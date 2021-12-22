@@ -6,12 +6,14 @@ export type PostSummary = {
   id: string;
   title: string;
   date: string;
+  link: string;
 };
 
 export type PostFull = {
   id: string;
   title: string;
   date: string;
+  link: string;
   content: string;
 };
 
@@ -55,5 +57,6 @@ export function getPost(id): PostFull {
     title: data.title,
     date: data.date,
     content: content,
+    link: `/posts/${realSlug}.html`,
   };
 }

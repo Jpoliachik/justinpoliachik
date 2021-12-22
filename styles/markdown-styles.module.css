@@ -18,11 +18,11 @@
 }
 
 .markdown code {
-  @apply bg-gray-200;
+  @apply bg-gray-200 text-sm rounded text-red-700;
 }
 
 .markdown pre {
-  @apply bg-gray-200 leading-normal p-4;
+  @apply bg-gray-200 leading-snug p-4 rounded;
   white-space: pre-wrap;
 }
 

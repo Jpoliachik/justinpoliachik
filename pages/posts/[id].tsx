@@ -7,6 +7,8 @@ import { MainHeader } from "../../components/MainHeader";
 import { MainFooter } from "../../components/MainFooter";
 import { PostBody } from "../../components/PostBody";
 import { SharedHead } from "../../components/SharedHead";
+import { PostHeader } from "../../components/PostHeader";
+import { SharedNav } from "../../components/SharedNav";
 
 export default function Post(props: { post: PostFull }) {
   const router = useRouter();
@@ -20,16 +22,10 @@ export default function Post(props: { post: PostFull }) {
     <html lang="en">
       <SharedHead title={props.post.title} />
       <body className="text-gray-800">
-        <nav id="header" className="sticky w-full z-10 top-0">
-          <div className="w-full h-20 bg-white justify-center border-b border-gray-200">
-            <div className="h-full w-full md:max-w-3xl mx-auto px-4">
-              <MainHeader />
-            </div>
-          </div>
-        </nav>
+        <SharedNav />
         <div className="container w-full md:max-w-3xl mx-auto pt-12 pb-28">
           <article className="max-w space-y-12 px-4">
-            {/* <PostHeader/> */}
+            <PostHeader post={props.post} />
             <PostBody post={props.post} />
           </article>
         </div>

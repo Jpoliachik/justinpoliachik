@@ -50,9 +50,10 @@ export const ProjectsList = () => {
     <div>
       <div className="text-xl font-serif text-gray-400">Projects</div>
       <div className="flex flex-col space-y-8 mt-4">
-        {items.map((item) => (
+        [still working on this bit]
+        {/* {items.map((item) => (
           <Project {...item} />
-        ))}
+        ))} */}
       </div>
     </div>
   );

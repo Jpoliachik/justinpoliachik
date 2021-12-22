@@ -32,19 +32,16 @@ jobs:
           git submodule sync --recursive
           git -c "http.extraheader=$auth_header" -c protocol.version=2 submodule update --init --force --recursive --depth=1
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: "0.65.3"
-          extended: true
+      - name: npm i
+        run: npm i
 
-      - name: Build
-        run: hugo
+      - name: build
+        run: npm run build
 
       - name: Deploy to S3
         uses: reggionick/s3-deploy@v3
         with:
-          folder: public
+          folder: out
           bucket: ${{ secrets.S3_BUCKET }}
           bucket-region: ${{ secrets.S3_BUCKET_REGION }}
           dist-id: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}

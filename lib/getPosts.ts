@@ -57,6 +57,6 @@ export function getPost(id): PostFull {
     title: data.title,
     date: data.date,
     content: content,
-    link: `/posts/${realSlug}.html`,
+    link: `/posts/${realSlug}/`,
   };
 }

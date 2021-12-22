@@ -46,11 +46,8 @@ export const ProjectsList = () => {
 
   return (
     <div>
-      <div className="text-xl font-serif">Projects</div>
-      <div className="text-m font-sans">
-        Current and past projects I've worked on. All the ones I'm allowed to post in public, that is!
-      </div>
-      <div className="flex flex-col space-y-4">
+      <div className="text-2xl font-serif text-gray-400">Projects</div>
+      <div className="flex flex-col space-y-8 mt-4">
         {items.map((item) => (
           <Project {...item} />
         ))}
@@ -62,8 +59,8 @@ export const ProjectsList = () => {
 const Project = (props: IProject) => {
   return (
     <div className="flex flex-row">
-      <div className="w-60 h-40 bg-green-500"></div>
-      <div className="flex flex-1 flex-col ml-4 justify-center">
+      <button className="w-20 h-20 md:w-40 md:h-40 lg:w-64 lg:h-44 rounded bg-green-500 hover:bg-green-400"></button>
+      <div className="flex flex-1 flex-col ml-4 md:ml-8 justify-center">
         <div className="text-xl font-sans">{props.title}</div>
         <div className="text-m font-sans">{props.description}</div>
         {props.links?.map((link) => (

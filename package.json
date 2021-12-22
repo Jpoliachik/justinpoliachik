@@ -3,8 +3,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
-    "start": "next start",
-    "svgr": "svgr -d components/icons/ icons"
+    "start": "next start"
   },
   "dependencies": {
     "next": "latest",

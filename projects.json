@@ -1,1 +1,52 @@
-{}
+{
+  "items": [
+    {
+      "title": "Telios for iOS & Android - Decentralized & Encrypted Email",
+      "description": "P2P encrypted email. Currently building iOS and Android apps using React Native and nodejs-mobile running hypercore",
+      "previewImage": "images/telios-preview.png",
+      "bgColor": "",
+      "links": [
+        {
+          "label": "Telios.io",
+          "href": "https://www.telios.io/"
+        }
+      ]
+    },
+    {
+      "title": "BatterUp - Live Fan Interaction Game",
+      "description": "iOS and Android app for fans to compete at live baseball games. Project and parent company (Flytrapps) sunsetted in 2019 :(",
+      "links": [
+        {
+          "label": "Project Retrospective",
+          "href": "/posts/2021-03-flytrappsstory/"
+        }
+      ],
+      "previewImage": "images/batterup-preview.png",
+      "bgColor": ""
+    },
+    {
+      "title": "One Second Everyday - Video Journal",
+      "description": "I take a clip (almost) every day and stitch them together at the end of each year. Ongoing project since 2013.",
+      "links": [
+        {
+          "label": "View on YouTube",
+          "href": "https://www.youtube.com/JustinPoliachik"
+        }
+      ],
+      "previewImage": "images/one-second-everyday.jpg",
+      "bgColor": ""
+    },
+    {
+      "title": "Flooded - iOS Game",
+      "description": "A fun fast-paced arcade game for iOS. Created in 2014. (In need of an update!)",
+      "links": [
+        {
+          "label": "App Store",
+          "href": "https://apps.apple.com/us/app/flooded/id882559598"
+        }
+      ],
+      "previewImage": "images/flooded-preview.png",
+      "bgColor": ""
+    }
+  ]
+}

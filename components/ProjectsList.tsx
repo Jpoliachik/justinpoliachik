@@ -61,7 +61,7 @@ export const ProjectsList = () => {
 const Project = (props: IProject) => {
   return (
     <div className="flex flex-row font-sans">
-      <button className="w-20 h-20 md:w-40 md:h-40 lg:w-64 lg:h-44 rounded bg-green-600 hover:bg-green-400"></button>
+      <button className="w-20 h-20 md:w-40 md:h-40 lg:w-64 lg:h-44 rounded-md bg-green-600 hover:bg-green-400"></button>
       <div className="flex flex-1 flex-col ml-4 md:ml-8 justify-center space-y-2">
         <div className="text-xl">{props.title}</div>
         <div className="text-m">{props.description}</div>

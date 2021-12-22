@@ -1,7 +1,6 @@
 ---
 title: "perfectionism is bullshit"
-date: 2021-09-05T17:30:00-04:00
-draft: false
+date: "2021-09-05T17:30:00-04:00"
 ---
 
 Perfectionism is bullshit.
@@ -10,7 +9,7 @@ It comes from a fear of judgement.
 It is an inner [resistance](<https://en.wikipedia.org/wiki/The_War_of_Art_(book)>).
 It kills creativity.
 
-![perfectionism](/img/perfectionismisbullshit_small.png)
+![perfectionism](/images/perfectionismisbullshit_small.png)
 
 I've spent too many thought cycles trying to decide _what_ to create, and not enough _just creating_. Perfectionism stops me before I even start.
 

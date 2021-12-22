@@ -1,7 +1,6 @@
 ---
 title: "[Video] One Second Everyday - 2013"
-date: 2013-12-31T23:00:00-04:00
-draft: false
+date: "2013-12-31T23:00:00-04:00"
 ---
 
 [![One Second Everyday 2013](http://img.youtube.com/vi/kNItK0RldKU/0.jpg)](http://www.youtube.com/watch?v=kNItK0RldKU)

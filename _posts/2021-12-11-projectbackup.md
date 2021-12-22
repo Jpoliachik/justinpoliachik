@@ -1,12 +1,11 @@
 ---
 title: "How I backup old dev projects"
-date: 2021-12-11T12:00:00-04:00
-draft: false
+date: "2021-12-11T12:00:00-04:00"
 ---
 
 # How I backup old dev projects
 
-I just got a new Macbook (M1Pro - so stoked!) - and am now going through the exercise of backing up old files and projects from the old laptop. While I'd prefer to quickly copy everything and move on, my old `Developer` directory was over 90GB in size - which is ridiculous for the ~40 various little projects I spun up over time. 
+I just got a new Macbook (M1Pro - so stoked!) - and am now going through the exercise of backing up old files and projects from the old laptop. While I'd prefer to quickly copy everything and move on, my old `Developer` directory was over 90GB in size - which is ridiculous for the ~40 various little projects I spun up over time.
 
 I really only need to backup _my_ code, not `node_modules`, etc.
 
@@ -26,7 +25,7 @@ find . -name 'build' -type d -prune -exec rm -rf '{}' +
 find . -name '.gradle' -type d -prune -exec rm -rf '{}' +
 ```
 
-Which thinned the `Developer` directory from ~90GB down to ~80MB! 
+Which thinned the `Developer` directory from ~90GB down to ~80MB!
 
 I can easily zip up that directory and drop in Cloud Storage backup now :cheers:
 

@@ -1,4 +1,6 @@
-export const RecentPosts = () => {
+import { PostSummary } from "../lib/getPosts";
+
+export const RecentPosts = (props: { postsList: PostSummary[] }) => {
   return (
     <div>
       <div className="text-xl font-serif text-gray-400">Recent Posts</div>

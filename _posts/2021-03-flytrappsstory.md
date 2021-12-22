@@ -1,7 +1,6 @@
 ---
 title: "The Flytrapps Story - Lessons Learned from a Failed Startup"
-date: 2021-03-03T17:30:00-04:00
-draft: false
+date: "2021-03-03T17:30:00-04:00"
 ---
 
 # The Flytrapps Story - Lessons Learned from a Failed Startup
@@ -17,7 +16,7 @@ As a team of experienced software engineers, we thought our speed of iteration w
 
 The story of Flytrapps begins in early 2017 when my friend Brooks - the most avid NFL fan I know - brought an interesting idea to lunch. At this time, Tony Romo was a new announcer, and gained a reputation for predicting upcoming plays with wild accuracy. As the players lined up, Romo could identify formations, player movements, and would call it - eg - "This is going to be a run to the left". [It was wildly entertaining to watch](https://www.youtube.com/watch?v=uVCVawClpRI). Could we recreate this, but put the guessing power into the fan's hands at home, via an app? The idea was great. It would be an incredibly fun game. And there were endless opportunites to expand gamification and "fan engagement". Brooks, Ben, Jesse and I set out to take on the challenge.
 
-![Ben, Brooks, Jesse, and Myself](/img/flytrapps-squad.jpg)
+![Ben, Brooks, Jesse, and Myself](/images/flytrapps-squad.jpg)
 
 ### App #1
 
@@ -48,7 +47,7 @@ The Wilmington Sharks, a local collegiate summer baseball team in the Coastal Pl
 We started from scratch and built a new app called "BatterUp". Based on the original "play calling" concept, we modified it for baseball and added generic yes/no questions. We also added the ability to ask concurrent questions throughout each inning so multiple questions could be open at once. Leaderboards were added to let fans track their standings, gamify the experience, and create a platform for offering rewards to winners.
 We built the app for iOS and Android using React Native, along with an admin console for web using React, connected using Firebase's Realtime DB. Working early mornings and late evenings, we hustled to design and build the solution in a couple months with the end of the Sharks' season as a looming deadline.
 
-![BatterUp Live](/img/batterup-screenshots.png)
+![BatterUp Live](/images/batterup-screenshots.png)
 
 In June 2018 we brought a group of close friends and family to a Sharks game with a Beta version of BatterUp in hand. One person would run admin from their hotspot-connected laptop, prompting questions and providing answers, while the rest of us would play and compete for 1st place. It was a blast.
 
@@ -64,13 +63,13 @@ It kept us fully engaged the entire game, and was the most fun we've had at a ba
 
 We debugged and refined the app, submitted to the App Store and Play Store, and printed posters and marketing cards to prepare for our public launch. On July 28th 2018 we setup a table at the Sharks game to run admin for our app. Armed with a bag of swag curtosy of the Sharks, we gave out prizes for the top points at the end of each inning and engaged with the fans.
 
-![BatterUp Poster Header](/img/batterup-header.png)
+![BatterUp Poster Header](/images/batterup-header.png)
 
 At the beginning of the game, we saw about 60 people playing along in the stands. At the end of each inning, the winner received in-app instructions to come pick up their prize, so we used this as an opportunity to chat and ask for user feedback. Every single person we talked to loved it. They couldn't put their phone down. We saw avid baseball fans playing. We saw kids who don't normally pay attention to baseball glued to their chairs awaiting the outcome of the next play. We even saw the actual players in the dugout using the app (and betting against their teammates) to compete on the BatterUp leaderboard. By the last inning, we still had 50+ participants. The engagement was astounding.
 
 Ben, Brooks, Jesse and I left the Sharks game feeling victorious. We now only had the challenge of productizing and selling BatterUp.
 
-![The BatterUp Crew running admin at a Sharks game](/img/batterup-crew.jpg)
+![The BatterUp Crew running admin at a Sharks game](/images/batterup-crew.jpg)
 
 As a fan engagement tool, BatterUp could attract users. But it required a dedicated human adminstrator to run the game from the stadium. For small teams, the cost to buy our system plus dedicating an employee to run a fan engagement game attracting ~50 fans is not worth it. The number of users alone is not enough to warrant significant adspace revenue. We _still_ didn't have the sales chops to push our unproven, zero-revenue product upstream to bigger teams. And we lacked the desire to go door-to-door selling the product for marginal revenue that wouldn't be worth the support costs (this was our side-gig after all).
 

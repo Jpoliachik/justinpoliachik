@@ -5,8 +5,9 @@ import { MainHeader } from "../components/MainHeader";
 import { MainIntro } from "../components/MainIntro";
 import { ProjectsList } from "../components/ProjectsList";
 import { RecentPosts } from "../components/RecentPosts";
+import { getPostsList, PostSummary } from "../lib/getPosts";
 
-export default function Home() {
+export default function Home(props: { postsList: PostSummary[] }) {
   return (
     <html lang="en">
       <Head>
@@ -33,7 +34,7 @@ export default function Home() {
             <MainIntro />
             <GenArtBlock />
             <div id="recentposts" className="section">
-              <RecentPosts />
+              <RecentPosts postsList={props.postsList} />
             </div>
             <div id="projects" className="section">
               <ProjectsList />
@@ -48,4 +49,11 @@ export default function Home() {
       </body>
     </html>
   );
+}
+
+export async function getStaticProps() {
+  const postsList = await getPostsList();
+  return {
+    props: { postsList },
+  };
 }

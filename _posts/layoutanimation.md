@@ -1,7 +1,6 @@
 ---
 title: "React Native’s LayoutAnimation is Awesome"
-date: 2016-01-23T15:12:23-04:00
-draft: false
+date: "2016-01-23T15:12:23-04:00"
 ---
 
 If you are developing with ReactNative and have not tried LayoutAnimation yet, you are missing out.
@@ -12,7 +11,7 @@ Enter [LayoutAnimation.](https://facebook.github.io/react-native/docs/layoutanim
 For n number of layout changes in your view, one line does it all. Set your state, allow your view to re-render, and LayoutAnimation handles all interpolation for you. For large and complex views, this is POWERFUL.
 
 In this example, I have a complex view with three possible states. Heights, widths, and item counts are rendered based on the state `index`, determined by which button is selected.
-![Without Animations](/img/layoutanimation-unanimated.gif)
+![Without Animations](/images/layoutanimation-unanimated.gif)
 The state changing code without any animation is below.
 
 ```javascript
@@ -29,7 +28,7 @@ LayoutAnimation.configureNext(LayoutAnimation.Presets.spring);
 ```
 
 This will apply the `spring`animation preset to any layout changes that occur during the next render cycle.
-![With Animation](/img/layoutanimation-animated.gif)
+![With Animation](/images/layoutanimation-animated.gif)
 BAM. Isn’t that sexy?
 
 Note: LayoutAnimation Deletion is supported for iOS as of RN 0.26, Android as of RN 0.28-rc. The example video does not show the deletion animation.

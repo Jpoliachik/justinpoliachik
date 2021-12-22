@@ -1,12 +1,11 @@
 ---
 title: "Generative Trees (p5js)"
-date: 2021-09-13T23:00:00-04:00
-draft: false
+date: "2021-09-13T23:00:00-04:00"
 ---
 
 Generative trees using p5.js
 
-![generative trees](/img/2021-09-13-generativetrees1.png)
+![generative trees](/images/2021-09-13-generativetrees1.png)
 
 I'm really happy with how these turned out. Honestly it's pretty cool this is possible given <50 lines of code.
 I plan to expand this experiment more in the future.

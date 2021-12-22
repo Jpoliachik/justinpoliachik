@@ -1,12 +1,11 @@
 ---
 title: "Random Triangles (p5js)"
-date: 2021-09-07T22:30:00-04:00
-draft: false
+date: "2021-09-07T22:30:00-04:00"
 ---
 
 Made some generative art today.
 
-![random triangles (sample)](/img/2021-09-07_randomtriangles_img_small.png)
+![random triangles (sample)](/images/2021-09-07_randomtriangles_img_small.png)
 
 _Very_ basic stuff, but I've always been fond of this type of artwork.
 I'd like to do this more often and embed a widget to play with it directly in my website. But until then, paste the code below into the p5js editor at `[editor.p5js.org](https://editor.p5js.org/)` and hit "play" a few times to generate some results.

@@ -1,7 +1,6 @@
 ---
 title: "[Video] Making Alcoholic Kombucha"
-date: 2020-02-25T12:00:00-04:00
-draft: false
+date: "2020-02-25T12:00:00-04:00"
 ---
 
 I made a video about making alcoholic kombucha! Despite a few mistakes it turned out delicious!

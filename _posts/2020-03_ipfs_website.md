@@ -1,7 +1,6 @@
 ---
 title: "Publishing my Website on IPFS"
-date: 2020-03-11T17:30:00-04:00
-draft: false
+date: "2020-03-11T17:30:00-04:00"
 ---
 
 I stumbled upon a blog post a few weeks back titled ["Why build this blog - or anything - on IPFS?"](http://teetotality.blog/posts/why-ipfs/). It intrigued me. IPFS sounded familiar - I remember thinking it was a cool experimental project in the crypto realm. But for the blog I was reading to _currently be on_ IPFS? - it made me think twice about the seriousness of it.
@@ -127,7 +126,7 @@ Then ran `ipfs swarm peers` to look at other peers in the network:
 
 The webUI that gets spun up is pretty sweet too - [http://127.0.0.1:5001/webui](http://127.0.0.1:5001/webui). I spent some time poking around, looking at peers, exploring files on the network. It was cool to see IPFS in action!
 
-![So Many Peers!](/img/ipfs-peers.png)
+![So Many Peers!](/images/ipfs-peers.png)
 
 Running the daemon allowed me to view content hosted on other nodes. I found XKCD on IPFS in the 'Explore' section and printed out `100 - Family Circus - transcript.txt` by its CID:
 

@@ -1,23 +1,21 @@
+import { format } from "date-fns";
+
 import { PostSummary } from "../lib/getPosts";
 
 export const RecentPosts = (props: { postsList: PostSummary[] }) => {
+  const recentPosts = props.postsList.slice(0, 4);
   return (
     <div>
       <div className="text-xl font-serif text-gray-400">Recent Posts</div>
       <div className="my-2 space-y-1">
-        <PostLink title={"How I backup my old dev projects"} date={"Dec 11 2021"} />
-        <PostLink
-          title={
-            "Bacon ipsum dolor amet pastrami brisket buffalo chuck ground round boudin turkey burgdoggen. Tongue burgdo"
-          }
-          date={"Oct 13 2021"}
-        />
-        <PostLink title={"How I backup my old dev projects"} date={"Dec 11 2021"} />
-        <PostLink title={"How I backup my old dev projects"} date={"Dec 11 2021"} />
+        {recentPosts.map((post) => {
+          const dateString = format(new Date(post.date), "PP");
+          return <PostLink title={post.title} date={dateString} link={`/posts/${post.id}`} />;
+        })}
       </div>
 
       <div className="text-right">
-        <a href="#" className="text-l font-sans font-semibold text-green-700 no-underline hover:underline">
+        <a href="/posts" className="text-l font-sans font-semibold text-green-700 no-underline hover:underline">
           All Posts
         </a>
       </div>
@@ -25,13 +23,13 @@ export const RecentPosts = (props: { postsList: PostSummary[] }) => {
   );
 };
 
-const PostLink = (props: { title: string; date: string }) => {
+const PostLink = (props: { title: string; date: string; link: string }) => {
   return (
     <div className="flex flex-row text-m font-sans justify-between items-center">
-      <a href="#" className="flex flex-1 font-semibold no-underline hover:underline">
+      <a href={props.link} className="flex flex-1 font-semibold no-underline hover:underline">
         {props.title}
       </a>
-      <div className="text-xs text-gray-400 mt ml-2 text-right">{props.date}</div>
+      <div className="text-xs text-gray-400 ml-2 text-right">{props.date}</div>
     </div>
   );
 };

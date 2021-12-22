@@ -29,7 +29,7 @@ const PostLink = (props: { title: string; date: string }) => {
       <a href="#" className="flex flex-1 font-semibold no-underline hover:underline">
         {props.title}
       </a>
-      <div className="text-sm text-gray-400 italic mt ml-2 text-right">{props.date}</div>
+      <div className="text-xs text-gray-400 mt ml-2 text-right">{props.date}</div>
     </div>
   );
 };

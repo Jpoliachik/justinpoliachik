@@ -1,3 +1,5 @@
+import LinkIcon from "../icons/link.svg";
+
 type IProjectLink = {
   label: string;
   href: string;
@@ -58,14 +60,19 @@ export const ProjectsList = () => {
 
 const Project = (props: IProject) => {
   return (
-    <div className="flex flex-row">
-      <button className="w-20 h-20 md:w-40 md:h-40 lg:w-64 lg:h-44 rounded bg-green-500 hover:bg-green-400"></button>
-      <div className="flex flex-1 flex-col ml-4 md:ml-8 justify-center">
-        <div className="text-xl font-sans">{props.title}</div>
-        <div className="text-m font-sans">{props.description}</div>
-        {props.links?.map((link) => (
-          <div className="text-l font-sans">{link.label}</div>
-        ))}
+    <div className="flex flex-row font-sans">
+      <button className="w-20 h-20 md:w-40 md:h-40 lg:w-64 lg:h-44 rounded bg-green-600 hover:bg-green-400"></button>
+      <div className="flex flex-1 flex-col ml-4 md:ml-8 justify-center space-y-2">
+        <div className="text-xl">{props.title}</div>
+        <div className="text-m">{props.description}</div>
+        <div>
+          {props.links?.map((link) => (
+            <a className="flex flex-row space-x-2 items-center" href={link.href}>
+              <LinkIcon width={16} height={16} fill="#388e3c" />
+              <div className="text-l font-semibold text-green-700 no-underline hover:underline">{link.label}</div>
+            </a>
+          ))}
+        </div>
       </div>
     </div>
   );

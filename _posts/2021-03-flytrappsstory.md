@@ -94,7 +94,7 @@ We mutually decided to take a break and think about our overall strategy. And th
 
 ### Focus
 
-A common theme throughout our story was the desire to start over and build from scratch. While this is necessary in some cases, especially when iterating to find product-market fit, it needs to be balanced with a healthy amount of focus and perseverance. We were too eager to pivot until we found "the perfect" idea, rather than focusing on the aspects that were working and digging deeper. Perfection doesn't exists in the startup space. It's messy, and it requires a deep focus, grind, and perseverance on a single niche.
+A common theme throughout our story was the desire to start over and build from scratch. While this is necessary in some cases, especially when iterating to find product-market fit, it needs to be balanced with a healthy amount of focus and perseverance. We were too eager to pivot until we found "the perfect" idea, rather than focusing on the aspects that were working and digging deeper. Perfection doesn't exist in the startup space. It's messy, and it requires a deep focus, grind, and perseverance on a single niche.
 
 ### Sales Skills are Important
 

@@ -10,7 +10,7 @@ export const RecentPosts = (props: { postsList: PostSummary[] }) => {
       <div className="my-2 space-y-1">
         {recentPosts.map((post) => {
           const dateString = format(new Date(post.date), "PP");
-          return <PostLink title={post.title} date={dateString} link={post.link} />;
+          return <PostLink key={post.id} title={post.title} date={dateString} link={post.link} />;
         })}
       </div>
 

@@ -10,7 +10,7 @@ import { getPostsList, PostSummary } from "../lib/getPosts";
 
 export default function Home(props: { postsList: PostSummary[] }) {
   return (
-    <html lang="en">
+    <div>
       <SharedHead title="Justin Poliachik" />
       <body className="text-gray-800">
         <SharedNav />
@@ -32,7 +32,7 @@ export default function Home(props: { postsList: PostSummary[] }) {
           </div>
         </div>
       </body>
-    </html>
+    </div>
   );
 }
 

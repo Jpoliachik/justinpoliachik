@@ -3,7 +3,6 @@ import ErrorPage from "next/error";
 
 import { getAllPosts, getPost, PostFull } from "../../lib/getPosts";
 import markdownToHtml from "../../lib/markdownToHtml";
-import { MainHeader } from "../../components/MainHeader";
 import { MainFooter } from "../../components/MainFooter";
 import { PostBody } from "../../components/PostBody";
 import { SharedHead } from "../../components/SharedHead";
@@ -55,18 +54,6 @@ export async function getStaticProps({ params }) {
 
 export async function getStaticPaths() {
   const posts = await getAllPosts();
-
-  console.log(
-    "paths",
-    Object.keys(posts).map((postId) => {
-      return {
-        params: {
-          id: postId,
-        },
-      };
-    })
-  );
-
   return {
     paths: Object.keys(posts).map((postId) => {
       return {

@@ -3,20 +3,18 @@ import { PostFull, PostSummary } from "../lib/getPosts";
 
 export const AllPosts = (props: { posts: PostSummary[] }) => {
   const groupedByYear = groupBy(props.posts, (post) => getYear(new Date(post.date)));
-  console.log("grouped posts", groupedByYear);
   return (
     <div className="font-sans flex flex-1 flex-col">
       <div className="text-3xl md:text-5xl font-serif font-bold">Posts</div>
 
       {Array.from(groupedByYear.keys()).map((year) => {
-        console.log(year);
         const postsInYear = groupedByYear.get(year);
         return (
           <div className="mt-8">
             <div className="text-2xl text-gray-400 font-serif">{year}</div>
             <div className="mt-2 space-y-2">
               {postsInYear.map((post) => {
-                return <PostEntry post={post} />;
+                return <PostEntry key={post.id} post={post} />;
               })}
             </div>
           </div>

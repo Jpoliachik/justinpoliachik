@@ -22,10 +22,14 @@
 }
 
 .markdown pre {
-  @apply bg-gray-200 leading-snug p-4 rounded;
+  @apply bg-gray-200 leading-snug p-4 rounded overflow-x-scroll;
   white-space: pre-wrap;
 }
 
 .markdown a {
   @apply no-underline hover:underline text-green-700 font-semibold;
+}
+
+.markdown img {
+  @apply border-2 rounded-lg border-gray-200 mt-4;
 }

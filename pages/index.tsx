@@ -1,6 +1,5 @@
 import { GenArtBlock } from "../components/GenArtBlock";
 import { MainFooter } from "../components/MainFooter";
-import { MainHeader } from "../components/MainHeader";
 import { MainIntro } from "../components/MainIntro";
 import { ProjectsList } from "../components/ProjectsList";
 import { RecentPosts } from "../components/RecentPosts";

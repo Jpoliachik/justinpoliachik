@@ -25,6 +25,18 @@
       "bgColor": ""
     },
     {
+      "title": "@justin.makes.things - Generative Art",
+      "description": "Generative Art Series. Using p5js to create art with code. Started in 2021. (need to spin out into separate dedicated page!)",
+      "links": [
+        {
+          "label": "View on Instagram",
+          "href": "https://www.instagram.com/justin.makes.things/"
+        }
+      ],
+      "previewImage": "images/project-genart.png",
+      "bgColor": ""
+    },
+    {
       "title": "One Second Everyday - Video Journal",
       "description": "I take a clip (almost) every day and stitch them together at the end of each year. Ongoing project since 2013.",
       "links": [

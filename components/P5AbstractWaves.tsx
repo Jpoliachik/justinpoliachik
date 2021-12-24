@@ -1,8 +1,7 @@
 import Sketch from "react-p5";
-import p5Types from "p5"; //Import this for typechecking and intellisense
+import p5Types from "p5";
 
-const P5Component = (props: { width: number; height: number }) => {
-  //See annotations in JS for more information
+const P5AbstractWaves = (props: { width: number; height: number }) => {
   const setup = (p5: p5Types, canvasParentRef: Element) => {
     p5.createCanvas(props.width, props.height).parent(canvasParentRef);
   };
@@ -10,11 +9,11 @@ const P5Component = (props: { width: number; height: number }) => {
   const draw = (p5: p5Types) => {
     function drawRidge(y) {
       p5.beginShape();
-      p5.vertex(-1, props.height + 1);
+      p5.vertex(-5, props.height + 5);
 
       const stepWidthBounds = [props.width * 0.1, props.width * 0.6];
 
-      let prevX = 0;
+      let prevX = -5;
       p5.vertex(prevX, y);
       let isPeak = p5.random() > 0.5;
       while (prevX < props.width) {
@@ -88,4 +87,4 @@ const P5Component = (props: { width: number; height: number }) => {
   return <Sketch setup={setup} draw={draw} />;
 };
 
-export default P5Component;
+export default P5AbstractWaves;

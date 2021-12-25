@@ -1,5 +1,5 @@
 ---
-title: "justinpoliachik.com Redesign"
+title: "justinpoliachik.com Redesign - Part 1"
 date: "2021-12-24T12:00:00-04:00"
 ---
 
@@ -7,11 +7,14 @@ It's time to redesign my personal website.
 Why?
 ![justinpoliachik.com Before](/images/2021-12-24-website-redesign-origsite.jpg)
 
-- It's boring! I'm much more creative and visual than the current site reflects.
-- With Hugo static site genration, I can only post Markdown files with limited ability to customize and add richer content. I'd like to add p5js generative art components and other media.
-- No separation between short quick posts, and long-form content (project case studies, for example)
+It's _boring!_
 
-### Why Now?
+I'm much more creative and visual than the current site reflects.
+It also doesn't support anything other than basic markdown posts.
+
+I'd like to spice it up with some generative art, a friendlier bio, and a place for long-form content like projects and case studies.
+
+### But Why Now?
 
 - I'm inspired by seeing other personal sites, and in this new remote-first world I want to be open and inviting for others to connect with.
 - I want to flex my design muscles a bit. This is a good exercise to solve problems for myself, learn Figma, and post about my process.
@@ -21,18 +24,18 @@ Why?
 
 ### Addressing the Problems:
 
-#### Boringness
+#### Make it less boring
 
-Fix 'boringness' at its core with content, not pure "visual flair".
-Introducing more varieties of content - blog posts, projects, artwork, and a personal touch - should make it more interesting.
+- Fix 'boringness' at its core with content, not pure "visual flair".
+  Introduce more varieties of content - blog posts, projects, artwork, all with a personal touch.
 
-#### Reflecting my personality
+#### Reflect my personality
 
 - Add a good profile pic, a fun blurb, and some splashes of color.
 - Important to keep things fluid and not too rigid.
 - Needs to feel friendly and approachable - make people want to reach out and connect! Do this by being transparent and fun.
 
-#### Multiple media types
+#### Support multiple media types
 
 - Support posts with text, images, videos, code snippets, and custom widgets (eg p5js).
 - I also need it to be incredibly easy to write and edit posts - this is paramount. Remove all hurdles to quickly adding content. Make simple posts easy, and make complex posts possible.
@@ -47,40 +50,50 @@ These are some of the personal websites I love, and drew inspiration from:
 - Paige Bailey - [dynamicwebpaige.github.io/info](https://dynamicwebpaige.github.io/info/) - amazing guiding principles.
 - Aileen Shin - [aileen.co](https://www.aileen.co/) - beautiful project images.
 
-### MVP Needs:
+## Iterations
 
-- Intro blurb
-  - Image, short intro, quick links to socials
-- Projects
-  - List of projects with an image, details, and links.
-  - May link to external website, or to own post.
-- Chronological list of posts
-  - Place to include all old posts, plus new
-  - I like writing in Markdown - hopeful for a way to use this, but add custom components if needed.
-- Keep it simple, but extensible for future iteration!
+#### v0: starting point
 
-### Nice to Have (Future)
+Basically copied [Matt Lim's](https://www.mattlim.me/) header and projects section, with an added "Recent Posts" section. Using generative art header with 'regenerate' button
 
-- Filterable posts by tags
-  - I work on a lot of different types of things, would be cool to be able to isolate each.
-- Embedded Twitter or Instagram content
-- Live metrics - where I am, what I'm working towards, data-driven progress
+![justinpoliachik.com v0](/images/site-redesign-0.png)
 
-- How to balance projects with posts?
-  - Which is more important - showing the latest post, or showing a list of my bigger projects?
-  - What would my current list of projects be?
-    - Better - not really a 'project' though - I can't show any screenshots or project details. I basically only want to list that I currently work there, and maybe a short sentence or two on area of focus.
-    - Telios
-    - one second everyday
-    - justin.makes.things
-    - Flooded
-    - Graveyard
-      - LifterRun
-      - BatterUp
-  - List projects first, then Posts. GitHub has 'pinned' repos - something like that?
+---
 
-# Development Phase
+#### v1: clean the header
 
-Top little blurb doesn't do much. Lets get rid of it.
+I wanted a more minimalist header like [Cole's](https://twnsnd.co/). Tried out an 'intro' phrase within the generative art component.
 
-Referencing https://github.com/vercel/next.js/tree/canary/examples/blog-starter for the NextJS dynamic Markdown stuff
+![justinpoliachik.com v0](/images/site-redesign-1.png)
+
+---
+
+#### v2: refining
+
+Wasn't a fan of text within generative art - very busy and text could be hard to read based on dynamic background content. Tried out a split section for intro phrase and recent posts. Refined projects component. Made header sticky at the top.
+
+![justinpoliachik.com v0](/images/site-redesign-2.png)
+
+---
+
+#### v3: getting closer
+
+Needed a focal point on page load. Tried that out here with a heavy intro, and tested out other section layouts.
+
+![justinpoliachik.com v0](/images/site-redesign-3.png)
+
+---
+
+#### v4: final!
+
+I wanted full-width generative art for balance, and also didn't want to squeeze the recent posts. Went full-width to make everything responsive without big layout changes. Happy to proceed with this!
+
+![justinpoliachik.com v0](/images/site-redesign-4.png)
+
+## Next Steps
+
+I'm happy with the design and ready to build!
+
+This was a fun project to force myself to slow down and go through the design process. I enjoyed flexing my design muscles a bit and getting more comfortable with Figma - it was my first project using it.
+
+Next up: building the site (post coming soon)

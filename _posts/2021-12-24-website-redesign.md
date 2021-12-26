@@ -96,4 +96,4 @@ I'm happy with the design and ready to build!
 
 This was a fun project to force myself to slow down and go through the design process. I enjoyed flexing my design muscles a bit and getting more comfortable with Figma - it was my first project using it.
 
-[Next up: building the site ->](/posts/2021-12-24-website-redesign-pt2/)
+[Next up: building the site ->](/posts/2021-12-26-website-redesign-pt2/)

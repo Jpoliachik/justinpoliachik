@@ -5,11 +5,11 @@
 .markdown p,
 .markdown ol,
 .markdown blockquote {
-  @apply my-6;
+  @apply my-4;
 }
 
 .markdown ul {
-  @apply my-6 ml-6 list-disc;
+  @apply my-4 ml-6 list-disc;
 }
 
 .markdown h2 {

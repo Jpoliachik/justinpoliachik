@@ -19,6 +19,10 @@ export const GenArtBlock = () => {
   }, []);
 
   const onRedraw = () => {
+    // not a very elegant solution here,
+    // but we need to dismount and remount the <P5AbstractWaves component
+    // in order to re-render with a new sketch.
+    // toggle shouldRenderSketch, then back to 'true' quickly to dismount and remount.
     setShouldRenderSketch(false);
     setTimeout(() => {
       setShouldRenderSketch(true);

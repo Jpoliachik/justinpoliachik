@@ -1,5 +1,5 @@
 ---
-title: "justinpoliachik.com Redesign - Part 1"
+title: "justinpoliachik.com Redesign - Part 1 (Design)"
 date: "2021-12-24T12:00:00-04:00"
 ---
 
@@ -64,7 +64,7 @@ Basically copied [Matt Lim's](https://www.mattlim.me/) header and projects secti
 
 I wanted a more minimalist header like [Cole's](https://twnsnd.co/). Tried out an 'intro' phrase within the generative art component.
 
-![justinpoliachik.com v0](/images/site-redesign-1.png)
+![justinpoliachik.com v1](/images/site-redesign-1.png)
 
 ---
 
@@ -72,7 +72,7 @@ I wanted a more minimalist header like [Cole's](https://twnsnd.co/). Tried out a
 
 Wasn't a fan of text within generative art - very busy and text could be hard to read based on dynamic background content. Tried out a split section for intro phrase and recent posts. Refined projects component. Made header sticky at the top.
 
-![justinpoliachik.com v0](/images/site-redesign-2.png)
+![justinpoliachik.com v2](/images/site-redesign-2.png)
 
 ---
 
@@ -80,7 +80,7 @@ Wasn't a fan of text within generative art - very busy and text could be hard to
 
 Needed a focal point on page load. Tried that out here with a heavy intro, and tested out other section layouts.
 
-![justinpoliachik.com v0](/images/site-redesign-3.png)
+![justinpoliachik.com v3](/images/site-redesign-3.png)
 
 ---
 
@@ -88,7 +88,7 @@ Needed a focal point on page load. Tried that out here with a heavy intro, and t
 
 I wanted full-width generative art for balance, and also didn't want to squeeze the recent posts. Went full-width to make everything responsive without big layout changes. Happy to proceed with this!
 
-![justinpoliachik.com v0](/images/site-redesign-4.png)
+![justinpoliachik.com v4](/images/site-redesign-4.png)
 
 ## Next Steps
 
@@ -96,4 +96,4 @@ I'm happy with the design and ready to build!
 
 This was a fun project to force myself to slow down and go through the design process. I enjoyed flexing my design muscles a bit and getting more comfortable with Figma - it was my first project using it.
 
-Next up: building the site (post coming soon)
+[Next up: building the site ->](/posts/2021-12-24-website-redesign-pt2/)

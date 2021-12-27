@@ -20,7 +20,7 @@ export const MainIntro = () => {
   useEffect(() => {
     const intervalId = setInterval(
       () => setIndex((index) => index + 1),
-      1500 // every 4 sec
+      4000 // every 4 sec
     );
     return () => clearTimeout(intervalId);
   }, []);

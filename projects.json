@@ -3,7 +3,7 @@
     {
       "title": "Telios for iOS & Android - Decentralized & Encrypted Email",
       "description": "P2P encrypted email. Currently building iOS and Android apps using React Native and nodejs-mobile running hypercore",
-      "previewImage": "images/telios-preview.png",
+      "previewImage": "images/project-telios-logo.png",
       "bgColor": "",
       "links": [
         {
@@ -13,15 +13,26 @@
       ]
     },
     {
+      "title": "LifterRun - Marketplace for Personal Training Sessions",
+      "description": "Built MVP platform & app in 2021 for realtime personal training matchmaking in NYC parks using Firebase, Stripe Connect, React Native.",
+      "links": [
+        {
+          "label": "MVP Case Study and Retrospective",
+          "href": "/posts/2022-01-03-lifterrun-mvp/"
+        }
+      ],
+      "previewImage": "images/project-lifterrun-app.png"
+    },
+    {
       "title": "BatterUp - Live Fan Interaction Game",
-      "description": "iOS and Android app for fans to compete at live baseball games. Project and parent company (Flytrapps) sunsetted in 2019 :(",
+      "description": "iOS and Android app for fans to compete at live baseball games. Project and parent company (Flytrapps) sunsetted in 2019.",
       "links": [
         {
           "label": "Project Retrospective",
           "href": "/posts/2021-03-flytrappsstory/"
         }
       ],
-      "previewImage": "images/batterup-preview.png",
+      "previewImage": "images/project-batterup-app.png",
       "bgColor": ""
     },
     {

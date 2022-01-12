@@ -4,7 +4,6 @@
       "title": "Telios for iOS & Android - Decentralized & Encrypted Email",
       "description": "P2P encrypted email. Currently building iOS and Android apps using React Native and nodejs-mobile running hypercore",
       "previewImage": "images/project-telios-logo.png",
-      "bgColor": "",
       "links": [
         {
           "label": "Telios.io",
@@ -32,8 +31,7 @@
           "href": "/posts/2021-03-flytrappsstory/"
         }
       ],
-      "previewImage": "images/project-batterup-app.png",
-      "bgColor": ""
+      "previewImage": "images/project-batterup-app.png"
     },
     {
       "title": "@justin.makes.things - Generative Art",
@@ -41,11 +39,10 @@
       "links": [
         {
           "label": "View on Instagram",
-          "href": "https://www.instagram.com/justin.makes.things/"
+          "href": "https://www.instagram.com/justin.generates.art/"
         }
       ],
-      "previewImage": "images/project-genart.png",
-      "bgColor": ""
+      "previewImage": "images/project-genart.png"
     },
     {
       "title": "One Second Everyday - Video Journal",
@@ -56,8 +53,7 @@
           "href": "https://www.youtube.com/JustinPoliachik"
         }
       ],
-      "previewImage": "images/one-second-everyday.jpg",
-      "bgColor": ""
+      "previewImage": "images/one-second-everyday.jpg"
     },
     {
       "title": "Flooded - iOS Game",
@@ -68,8 +64,7 @@
           "href": "https://apps.apple.com/us/app/flooded/id882559598"
         }
       ],
-      "previewImage": "images/flooded-preview.png",
-      "bgColor": ""
+      "previewImage": "images/flooded-preview.png"
     }
   ]
 }

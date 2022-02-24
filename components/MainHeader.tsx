@@ -14,9 +14,9 @@ export const MainHeader = () => {
         <a href="/posts" className="no-underline hover:underline">
           posts
         </a>
-        <a href="/about" className="no-underline hover:underline">
+        {/* <a href="/about" className="no-underline hover:underline">
           about
-        </a>
+        </a> */}
       </div>
     </div>
   );

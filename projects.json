@@ -1,17 +1,6 @@
 {
   "items": [
     {
-      "title": "Telios for iOS & Android - Decentralized & Encrypted Email",
-      "description": "P2P encrypted email. Currently building iOS and Android apps using React Native and nodejs-mobile running hypercore",
-      "previewImage": "images/project-telios-logo.png",
-      "links": [
-        {
-          "label": "Telios.io",
-          "href": "https://www.telios.io/"
-        }
-      ]
-    },
-    {
       "title": "LifterRun - Marketplace for Personal Training Sessions",
       "description": "Built MVP platform & app in 2021 for realtime personal training matchmaking in NYC parks using Firebase, Stripe Connect, React Native.",
       "links": [

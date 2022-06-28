@@ -1,5 +1,5 @@
 import fs from "fs";
-import { join } from "path";
+import path from "path";
 import matter from "gray-matter";
 
 export type PostSummary = {
@@ -17,7 +17,7 @@ export type PostFull = {
   content: string;
 };
 
-const postsDirectory = join(process.cwd(), "_posts");
+const postsDirectory = path.join(process.cwd(), "_posts");
 
 export const getAllPosts = async (): Promise<{ [id: string]: PostFull }> => {
   const postsDirContents = fs.readdirSync(postsDirectory);
@@ -33,22 +33,37 @@ export const getAllPosts = async (): Promise<{ [id: string]: PostFull }> => {
 export const getPostsList = async (): Promise<PostSummary[]> => {
   const postsDirContents = fs.readdirSync(postsDirectory);
 
-  const posts = postsDirContents
-    .map((slug) => {
-      // don't include content for list
-      const { content, ...summaryPost } = getPost(slug);
-      return summaryPost;
-    })
-    // sort posts by date in descending order
-    // @ts-ignore
-    .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
+  const posts = postsDirContents.map((slug) => {
+    // don't include content for list
+    const { content, ...summaryPost } = getPost(slug);
+    return summaryPost;
+  });
 
-  return posts;
+  const sketchesDirectory = path.join(process.cwd(), "pages/sketches");
+  const filenames = fs.readdirSync(sketchesDirectory);
+  const sketches = filenames.map((filename) => {
+    const name = path.parse(filename).name;
+    const nameParts = name.split("_");
+    const date = nameParts[0];
+    const post: PostSummary = {
+      id: filename,
+      title: `Gen Art - ${nameParts[1]}`,
+      date,
+      link: `/sketches/${name}`,
+    };
+
+    return post;
+  });
+  console.log("sketches", sketches);
+
+  const allPosts = posts.concat(sketches).sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf());
+
+  return allPosts;
 };
 
 export function getPost(id): PostFull {
   const realSlug = id.replace(/\.md$/, "");
-  const fullPath = join(postsDirectory, `${realSlug}.md`);
+  const fullPath = path.join(postsDirectory, `${realSlug}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 

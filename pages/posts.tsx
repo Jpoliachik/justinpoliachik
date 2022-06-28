@@ -1,3 +1,6 @@
+import { promises as fs } from "fs";
+import path from "path";
+
 import { AllPosts } from "../components/AllPosts";
 import { MainFooter } from "../components/MainFooter";
 import { MainHeader } from "../components/MainHeader";

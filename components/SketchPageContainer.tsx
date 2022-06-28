@@ -4,6 +4,7 @@ import { MainFooter } from "../components/MainFooter";
 import { SharedHead } from "../components/SharedHead";
 import { SharedNav } from "../components/SharedNav";
 import { GenArtCanvas } from "../components/GenArtCanvas";
+import { useWindowSize } from "usehooks-ts";
 
 export interface SketchPageContainerProps {
   title?: string;
@@ -20,6 +21,8 @@ export const SketchPageContainer = ({
   description,
   dateText,
 }: SketchPageContainerProps) => {
+  const { width } = useWindowSize();
+  const size = Math.min(width - 20, canvasSize.width);
   return (
     <div>
       <SharedHead title="Justin Poliachik" />
@@ -27,8 +30,8 @@ export const SketchPageContainer = ({
         <SharedNav />
         <div className="container w-full md:max-w-3xl mx-auto pt-20 pb-28">
           <div className="flex items-center flex-col">
-            <GenArtCanvas width={canvasSize.width} height={canvasSize.height} draw={draw} />
-            <div style={{ width: canvasSize.width }} className="mt-4">
+            <GenArtCanvas width={size} height={canvasSize.height} draw={draw} />
+            <div style={{ width: size }}>
               <h2 className="text-xl font-bold text-slate-800">{title}</h2>
               <p className="text-base text-slate-500">{description}</p>
               <p className="italic text-sm text-slate-400">{dateText}</p>

@@ -81,7 +81,7 @@ The initial questions:
 
 _What is the best possible experience to find your trainer and have a great workout?_
 
-The searching -> booking -> meetup experience is the core interaction. While there were many different screens, functions, and user flows that needed hours of consideration and iteration, for MVP I focused on that core flow.f
+The searching -> booking -> meetup experience is the core interaction. While there were many different screens, functions, and user flows that needed hours of consideration and iteration, for MVP I focused on that core flow.
 
 I started with a series of iterative sketches to nail down the basic flows and patterns.
 

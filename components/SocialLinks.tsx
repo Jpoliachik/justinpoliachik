@@ -2,6 +2,7 @@ import Twitter from "../icons/twitter.svg";
 import GitHub from "../icons/github.svg";
 import YouTube from "../icons/youtube.svg";
 import LinkedIn from "../icons/linkedin.svg";
+import Document from "../icons/document.svg";
 
 const fillColor = "#262626";
 
@@ -19,6 +20,9 @@ export const SocialLinks = () => {
       </a>
       <a href="https://linkedin.com/in/justinpoliachik/">
         <LinkedIn className="svg-link w-5 h-5" fill={fillColor} />
+      </a>
+      <a href="https://jpoliachik-public.s3.amazonaws.com/documents/JustinPoliachik_CV_compressed.pdf">
+        <Document className="svg-link w-5 h-5" fill={fillColor} />
       </a>
     </div>
   );

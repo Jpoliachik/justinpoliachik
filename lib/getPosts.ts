@@ -54,7 +54,6 @@ export const getPostsList = async (): Promise<PostSummary[]> => {
 
     return post;
   });
-  console.log("sketches", sketches);
 
   const allPosts = posts.concat(sketches).sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf());
 

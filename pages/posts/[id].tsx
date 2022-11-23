@@ -18,7 +18,7 @@ export default function Post(props: { post: PostFull }) {
   }
 
   return (
-    <html lang="en">
+    <div>
       <SharedHead title={props.post.title} />
       <SharedNav />
       <div className="container w-full md:max-w-3xl mx-auto pt-12 pb-28">
@@ -32,7 +32,7 @@ export default function Post(props: { post: PostFull }) {
           <MainFooter />
         </div>
       </div>
-    </html>
+    </div>
   );
 }
 

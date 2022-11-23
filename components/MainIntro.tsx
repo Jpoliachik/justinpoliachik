@@ -30,7 +30,9 @@ export const MainIntro = () => {
   return (
     <div className="flex flex-col my-0 md:my-12">
       <div className="text-3xl md:text-5xl font-serif font-bold flex flex-row">
-        <TextTransition inline={true} text={greetings[index % greetings.length]} springConfig={presets.slow} />
+        <TextTransition inline={true} springConfig={presets.slow}>
+          {greetings[index % greetings.length]}
+        </TextTransition>
         <div>, I'm Justin!</div>
       </div>
       <div className="text-l md:text-xl font-light mt-4">

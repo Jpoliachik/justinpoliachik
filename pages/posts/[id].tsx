@@ -20,20 +20,18 @@ export default function Post(props: { post: PostFull }) {
   return (
     <html lang="en">
       <SharedHead title={props.post.title} />
-      <body className="text-gray-800">
-        <SharedNav />
-        <div className="container w-full md:max-w-3xl mx-auto pt-12 pb-28">
-          <article className="max-w space-y-12 px-4">
-            <PostHeader post={props.post} />
-            <PostBody post={props.post} />
-          </article>
+      <SharedNav />
+      <div className="container w-full md:max-w-3xl mx-auto pt-12 pb-28">
+        <article className="max-w space-y-12 px-4">
+          <PostHeader post={props.post} />
+          <PostBody post={props.post} />
+        </article>
+      </div>
+      <div className="w-full h-24 bg-gray-100 justify-center">
+        <div className="h-full w-full md:max-w-3xl mx-auto px-4">
+          <MainFooter />
         </div>
-        <div className="w-full h-24 bg-gray-100 justify-center">
-          <div className="h-full w-full md:max-w-3xl mx-auto px-4">
-            <MainFooter />
-          </div>
-        </div>
-      </body>
+      </div>
     </html>
   );
 }

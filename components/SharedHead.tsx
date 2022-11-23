@@ -10,13 +10,6 @@ export const SharedHead = (props: { title: string }) => {
       />
       <meta name="description" content="Justin Poliachik is a software engineer." />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600&display=swap" rel="stylesheet" />
-      <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,700&display=swap" rel="stylesheet" />
-      <script
-        data-goatcounter="https://justinpoliachik.goatcounter.com/count"
-        async
-        src="//gc.zgo.at/count.js"
-      ></script>
     </Head>
   );
 };

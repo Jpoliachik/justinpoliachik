@@ -5,6 +5,7 @@ import { SharedHead } from "../components/SharedHead";
 import { SharedNav } from "../components/SharedNav";
 import { GenArtCanvas } from "../components/GenArtCanvas";
 import { useWindowSize } from "usehooks-ts";
+import { GenSketch } from "./GenSketch";
 
 export interface SketchPageContainerProps {
   title?: string;
@@ -26,24 +27,22 @@ export const SketchPageContainer = ({
   return (
     <div>
       <SharedHead title="Justin Poliachik" />
-      <body className="text-gray-800">
-        <SharedNav />
-        <div className="container w-full md:max-w-3xl mx-auto pt-20 pb-28">
-          <div className="flex items-center flex-col">
-            <GenArtCanvas width={size} height={canvasSize.height} draw={draw} />
-            <div style={{ width: size }}>
-              <h2 className="text-xl font-bold text-slate-800">{title}</h2>
-              <p className="text-base text-slate-500">{description}</p>
-              <p className="italic text-sm text-slate-400">{dateText}</p>
-            </div>
+      <SharedNav />
+      <div className="container w-full md:max-w-3xl mx-auto pt-20 pb-28">
+        <div className="flex items-center flex-col">
+          <GenSketch size={{ width: size, height: canvasSize.height }} draw={draw} enableRedraw={true} />
+          <div style={{ width: size }}>
+            <h2 className="text-xl font-bold text-slate-800">{title}</h2>
+            <p className="text-base text-slate-500">{description}</p>
+            <p className="italic text-sm text-slate-400">{dateText}</p>
           </div>
         </div>
-        <div className="w-full h-24 bg-gray-100 justify-center">
-          <div className="h-full w-full md:max-w-3xl mx-auto px-4">
-            <MainFooter />
-          </div>
+      </div>
+      <div className="w-full h-24 bg-gray-100 justify-center">
+        <div className="h-full w-full md:max-w-3xl mx-auto px-4">
+          <MainFooter />
         </div>
-      </body>
+      </div>
     </div>
   );
 };

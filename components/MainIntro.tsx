@@ -5,21 +5,23 @@ import { SocialLinks } from "./SocialLinks";
 const greetings = ["Hey there", "Hello", "Howdy", "Hola", "What's up", "Wuddup", "Bonjour", "Aloha", "Ciao", "Yo"];
 
 const randomIndex = (excluding?: number) => {
-  const value = Math.floor(Math.random() * greetings.length);
-  if (value === excluding) {
-    // try once more
-    return randomIndex();
-  } else {
-    return value;
+  let values = [...greetings];
+  if (excluding) {
+    values = values.filter((_, i) => i !== excluding);
   }
+  const value = Math.floor(Math.random() * values.length);
+  return value;
 };
 
 export const MainIntro = () => {
-  const [index, setIndex] = useState(randomIndex());
+  const initialGreetingIndex = new Date().getDate() % greetings.length;
+  const [index, setIndex] = useState(initialGreetingIndex);
 
   useEffect(() => {
     const intervalId = setInterval(
-      () => setIndex((index) => index + 1),
+      () => {
+        setIndex((index) => randomIndex(index));
+      },
       4000 // every 4 sec
     );
     return () => clearTimeout(intervalId);

@@ -1,9 +1,8 @@
-import { SketchPageContainer } from "../../components/SketchPageContainer";
 import p5Types from "p5";
-import { randomColor } from "../../genart/lib/randomColor";
-import { getPointAtRandomAngle } from "../../genart/lib/getPointAtAngle";
+import { getPointAtRandomAngle } from "../lib/getPointAtAngle";
+import { randomColor } from "../lib/randomColor";
 
-const draw = (p5: p5Types, size: { width: number; height: number }) => {
+export const drawSketch = (p5: p5Types, size: { width: number; height: number }) => {
   const margin = 100;
   const crustWidth = 25;
   const toppingSizeBounds = [30, 80];
@@ -41,8 +40,4 @@ const draw = (p5: p5Types, size: { width: number; height: number }) => {
   drawToppings(topping2Count, topping2Color);
 
   p5.noLoop();
-};
-
-export default () => {
-  return <SketchPageContainer draw={draw} title={"15 minute sketch - pizza generator"} dateText={"2022-07-13"} />;
 };

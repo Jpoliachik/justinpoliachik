@@ -1,10 +1,9 @@
-import { SketchPageContainer } from "../../components/SketchPageContainer";
 import p5Types from "p5";
-import { getBoundedBoundsWithRatio } from "../../genart/lib/bounds";
-import { drawCirclesAlongLine } from "../../genart/lib/drawCirclesAlongLine";
-import { randomColor } from "../../genart/lib/randomColor";
+import { getBoundedBoundsWithRatio } from "../lib/bounds";
+import { drawCirclesAlongLine } from "../lib/drawCirclesAlongLine";
+import { randomColor } from "../lib/randomColor";
 
-const draw = (p5: p5Types, size: { width: number; height: number }) => {
+export const drawSketch = (p5: p5Types, size: { width: number; height: number }) => {
   const margin = -100;
 
   const drawCloud = (args: { y: number; lightFactor: number; hue: number }) => {
@@ -41,8 +40,4 @@ const draw = (p5: p5Types, size: { width: number; height: number }) => {
   }
 
   p5.noLoop();
-};
-
-export default () => {
-  return <SketchPageContainer draw={draw} title={"clouds"} dateText={"2022-06-26"} />;
 };

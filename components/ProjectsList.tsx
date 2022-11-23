@@ -21,8 +21,8 @@ export const ProjectsList = () => {
     <div>
       <div className="text-xl font-serif text-gray-400">Projects</div>
       <div className="flex flex-col space-y-8 mt-4">
-        {items.map((item) => (
-          <Project project={item} />
+        {items.map((item, index) => (
+          <Project key={index} project={item} />
         ))}
       </div>
     </div>
@@ -42,8 +42,8 @@ const Project = (props: { project: IProject }) => {
         <div className="text-l md:text-xl font-semibold">{props.project.title}</div>
         <div className="text-m">{props.project.description}</div>
         <div className="flex flex-row space-x-4">
-          {props.project.links?.map((link) => (
-            <a className="flex flex-row space-x-1 items-center" href={link.href}>
+          {props.project.links?.map((link, index) => (
+            <a key={index} className="flex flex-row space-x-1 items-center" href={link.href}>
               <LinkIcon width={16} height={16} fill="#388e3c" />
               <div className="text-l font-semibold text-green-700 no-underline hover:underline">{link.label}</div>
             </a>

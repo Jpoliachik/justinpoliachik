@@ -7,8 +7,10 @@ import { SharedHead } from "../components/SharedHead";
 import { SharedNav } from "../components/SharedNav";
 import { getPostsList, PostSummary } from "../lib/getPosts";
 import { drawSketch } from "../genart/sketches/sketch_2022_abstract_waves";
+import { RecentCreations } from "../components/RecentCreations";
+import { CreationItem, creationsList } from "../lib/creations";
 
-export default function Home(props: { postsList: PostSummary[] }) {
+export default function Home(props: { postsList: PostSummary[]; creationsList: CreationItem[] }) {
   return (
     <div>
       <SharedHead title="Justin Poliachik" />
@@ -19,6 +21,9 @@ export default function Home(props: { postsList: PostSummary[] }) {
           <GenSketch className="w-full h-72" draw={drawSketch} enableRedraw={true} />
           <div id="recentposts" className="section">
             <RecentPosts postsList={props.postsList} />
+          </div>
+          <div id="recentcreations" className="section">
+            <RecentCreations creationsList={creationsList} />
           </div>
           <div id="projects" className="section">
             <ProjectsList />
@@ -37,6 +42,6 @@ export default function Home(props: { postsList: PostSummary[] }) {
 export async function getStaticProps() {
   const postsList = await getPostsList();
   return {
-    props: { postsList },
+    props: { postsList, creationsList },
   };
 }

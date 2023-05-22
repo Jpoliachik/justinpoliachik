@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "title": "Explained in 20 Seconds",
+      "description": "Short videos explaining software engineering topics in 20 seconds or less. Popular on TikTok!",
+      "links": [
+        {
+          "label": "Explained in 20 seconds on TikTok",
+          "href": "https://www.tiktok.com/@j_poli"
+        }
+      ],
+      "previewImage": "images/explain-20-seconds.png"
+    },
+    {
       "title": "LifterRun - Marketplace for Personal Training Sessions",
       "description": "Built MVP platform & app in 2021 for realtime personal training matchmaking in NYC parks using Firebase, Stripe Connect, React Native.",
       "links": [

@@ -5,8 +5,8 @@
       "description": "Short videos explaining software engineering topics in 20 seconds or less. Popular on TikTok!",
       "links": [
         {
-          "label": "Explained in 20 seconds on TikTok",
-          "href": "https://www.tiktok.com/@j_poli"
+          "label": "View on YouTube",
+          "href": "https://www.youtube.com/playlist?list=PL_Yop5JuDpKZgMA_Fe2YFDTVnf4SnjSFy"
         }
       ],
       "previewImage": "images/explain-20-seconds.png"
@@ -39,7 +39,7 @@
       "links": [
         {
           "label": "View on Instagram",
-          "href": "https://www.instagram.com/justin.generates.art/"
+          "href": "https://www.instagram.com/justin.makes.things/"
         }
       ],
       "previewImage": "images/project-genart.png"
@@ -56,12 +56,12 @@
       "previewImage": "images/one-second-everyday.jpg"
     },
     {
-      "title": "Flooded - iOS Game",
-      "description": "A fun fast-paced arcade game for iOS. Created in 2014. (In need of an update!)",
+      "title": "Flooded - iOS Game (retired)",
+      "description": "A fun fast-paced arcade game for iOS. Created in 2014.",
       "links": [
         {
-          "label": "App Store",
-          "href": "https://apps.apple.com/us/app/flooded/id882559598"
+          "label": "Gameplay",
+          "href": "https://www.youtube.com/shorts/01x77IXWTDg"
         }
       ],
       "previewImage": "images/flooded-preview.png"

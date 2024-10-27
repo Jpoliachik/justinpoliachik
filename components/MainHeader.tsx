@@ -5,7 +5,9 @@ export const MainHeader = () => {
     <div className="flex h-full flex-row items-center justify-between font-sans">
       <a href="/" className="flex flex-row items-center">
         <HeaderProfilePic />
-        <div className="flex flex-1 ml-2 md:ml-4 text-sm md:text-lg font-light text-gray-500">Justin Poliachik</div>
+        <div className="flex flex-1 ml-2 md:ml-4 text-sm md:text-lg font-light text-gray-500">
+          Justin Poliachik | JP
+        </div>
       </a>
       <div className="flex flex-row ml-4 items-center space-x-3 md:space-x-8 font-semibold text-grey-800 ">
         <a href="/#projects" className="no-underline hover:underline">

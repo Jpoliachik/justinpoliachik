@@ -11,6 +11,7 @@ export default function Document() {
           async
           src="//gc.zgo.at/count.js"
         ></script>
+        <link rel="preload" href="/images/profilepic-fox.jpg" as="image" type="image/jpeg" />
       </Head>
       <body className="text-gray-800">
         <Main />

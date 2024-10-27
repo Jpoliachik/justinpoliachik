@@ -21,7 +21,7 @@ export default function Post(props: { post: PostFull }) {
     <div>
       <SharedHead title={props.post.title} />
       <SharedNav />
-      <div className="container w-full md:max-w-3xl mx-auto pt-12 pb-28">
+      <div className="container w-full md:max-w-3xl mx-auto pt-12 pb-28 min-h-screen">
         <article className="max-w space-y-12 px-4">
           <PostHeader post={props.post} />
           <PostBody post={props.post} />

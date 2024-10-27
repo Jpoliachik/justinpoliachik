@@ -10,14 +10,6 @@ const nextConfig = {
     return config;
   },
   trailingSlash: true,
-  async rewrites() {
-    return [
-      {
-        source: '/ai',
-        destination: '/posts/2024-ai-manifesto',
-      },
-    ];
-  },
 };
 
 module.exports = nextConfig;

@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "title": "Screen Sober",
+      "description": "An app that helps you develop a healthy relationship with your phone.",
+      "links": [
+        {
+          "label": "screensober.app",
+          "href": "https://www.screensober.app/"
+        }
+      ],
+      "previewImage": "images/screensober.png"
+    },
+    {
       "title": "Creativity.blue - Daily Creative Prompts",
       "description": "Spark new ideas, build creative habits, and have fun making art with others :)",
       "links": [

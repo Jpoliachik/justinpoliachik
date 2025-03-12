@@ -59,9 +59,9 @@ export const RecommendationCard: React.FC<RecommendationCardProps> = ({ recommen
 
   return (
     <div className="mb-2">
-      <div className="flex items-center">
+      <div className="flex">
         {imageUrl ? (
-          <a href={linkUrl} target="_blank" rel="noopener noreferrer" className="mr-3">
+          <a href={linkUrl} target="_blank" rel="noopener noreferrer" className="mr-3 mt-1">
             <img
               src={imageUrl}
               alt={displayTitle}
@@ -71,7 +71,7 @@ export const RecommendationCard: React.FC<RecommendationCardProps> = ({ recommen
         ) : (
           <span className="text-sm mr-2 mt-1">{icon}</span>
         )}
-        <div className="flex-1">
+        <div className="flex-1 flex flex-col">
           <a
             href={linkUrl}
             target="_blank"
@@ -82,6 +82,7 @@ export const RecommendationCard: React.FC<RecommendationCardProps> = ({ recommen
           </a>
           {/* {creator && <span className="text-sm text-gray-600 ml-2">{creator}</span>} */}
           {notes && <p className="text-sm text-gray-700">{notes}</p>}
+          <span className="text-xs text-gray-400 mt-1">{formatDate(addedAt)}</span>
         </div>
       </div>
     </div>

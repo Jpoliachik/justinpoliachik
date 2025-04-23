@@ -27,12 +27,14 @@ I can't imagine what this will feel like far in the future. The value of these a
 
 It's hard to express how grateful I am for having started this project so long ago. I've decided to make my videos up until 2023 public—before Wes arrived and our story became more personal. But I can confidently say this is the most important project I've ever undertaken. One second a day, for as long as I'm able, capturing a life unfolding one moment at a time.
 
-2022 - https://youtu.be/aL9zFzJCUZ8
-2021 - https://youtu.be/sQlZCkZTYBw
-2020 - https://youtu.be/83TyohxuFQY
-2019 - https://youtu.be/jUFtR8fxf7E
-2018 - https://youtu.be/eAE6WWQYm34
-2017 - https://youtu.be/BMHbYEwRiFE
-2016 - https://youtu.be/VVqHYkXywzo
-2015 - https://youtu.be/QZbA6mXnKqI
-2013 - https://youtu.be/kNItK0RldKU
+## One Second Everyday Videos
+
+- [2022](https://youtu.be/aL9zFzJCUZ8)
+- [2021](https://youtu.be/sQlZCkZTYBw)
+- [2020](https://youtu.be/83TyohxuFQY)
+- [2019](https://youtu.be/jUFtR8fxf7E)
+- [2018](https://youtu.be/eAE6WWQYm34)
+- [2017](https://youtu.be/BMHbYEwRiFE)
+- [2016](https://youtu.be/VVqHYkXywzo)
+- [2015](https://youtu.be/QZbA6mXnKqI)
+- [2013](https://youtu.be/kNItK0RldKU)

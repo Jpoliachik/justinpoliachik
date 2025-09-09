@@ -67,6 +67,17 @@
       "previewImage": "images/one-second-everyday.jpg"
     },
     {
+      "title": "Bob Ross Trading Cards",
+      "description": "A silly project. I'm going to a music festival and dressing up as Bob Ross and handing these out.",
+      "links": [
+        {
+          "label": "View Cards",
+          "href": "/bobross/index.html"
+        }
+      ],
+      "previewImage": "images/bobross-back.png"
+    },
+    {
       "title": "(2021) LifterRun - Marketplace for Personal Training Sessions",
       "description": "Built MVP platform & app in 2021 for realtime personal training matchmaking in NYC parks using Firebase, Stripe Connect, React Native.",
       "links": [

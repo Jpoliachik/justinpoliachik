@@ -1,12 +1,12 @@
 {
   "items": [
     {
-      "title": "Monotype.app",
+      "title": "RetroType",
       "description": "A retro-inspired digital typewriter for focused, fun, distraction-free writing.",
       "links": [
         {
-          "label": "monotype.app",
-          "href": "https://www.monotype.app/"
+          "label": "retrotype.ink",
+          "href": "https://retrotype.ink/"
         }
       ],
       "previewImage": "images/monotype.png"

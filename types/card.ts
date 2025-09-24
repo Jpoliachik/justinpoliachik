@@ -27,13 +27,13 @@ export interface CardMove {
   title: string;
   description: string;
   iconCount: number;
-  damage: number;
+  damage: string | number;
   type: MoveType;
 }
 
 export interface CardData {
   name: string;
-  hp: number;
+  hp: string | number;
   image: string;
   tagline: string;
   moves: CardMove[];

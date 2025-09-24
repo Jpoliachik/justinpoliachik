@@ -214,11 +214,11 @@ const CardCreatorForm: React.FC<CardCreatorFormProps> = ({ onUpdate, initialData
                 <div>
                   <div className="flex justify-between items-center mb-1">
                     <label className="text-xs font-medium">Move Description</label>
-                    <span className="text-xs text-gray-500">{moveDescription.length}/90</span>
+                    <span className="text-xs text-gray-500">{moveDescription.length}/160</span>
                   </div>
                   <textarea
                     {...register(`moves.${index}.description`)}
-                    maxLength={90}
+                    maxLength={160}
                     placeholder="Describe what this move does"
                     className="w-full px-2 py-1 border rounded text-sm h-20 resize-none"
                   />

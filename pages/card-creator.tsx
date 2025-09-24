@@ -1,8 +1,14 @@
 import React from 'react';
 import CardCreator from '../components/CardCreator';
+import { SharedNav } from '../components/SharedNav';
 
 const CardCreatorPage: React.FC = () => {
-  return <CardCreator />;
+  return (
+    <>
+      <SharedNav />
+      <CardCreator />
+    </>
+  );
 };
 
 export default CardCreatorPage;

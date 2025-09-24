@@ -1,7 +1,7 @@
 {
   "items": [
     {
-      "title": "RetroType",
+      "title": "Retrotype",
       "description": "A retro-inspired digital typewriter for focused, fun, distraction-free writing.",
       "links": [
         {
@@ -10,6 +10,17 @@
         }
       ],
       "previewImage": "images/monotype.png"
+    },
+    {
+      "title": "Card Creator",
+      "description": "Create custom trading cards with real-time preview and export to PNG.",
+      "links": [
+        {
+          "label": "Create Cards",
+          "href": "/card-creator"
+        }
+      ],
+      "previewImage": "images/bobross-back.png"
     },
     {
       "title": "Screen Sober",
@@ -65,17 +76,6 @@
         }
       ],
       "previewImage": "images/one-second-everyday.jpg"
-    },
-    {
-      "title": "Bob Ross Trading Cards",
-      "description": "A silly project. I'm going to a music festival and dressing up as Bob Ross and handing these out.",
-      "links": [
-        {
-          "label": "View Cards",
-          "href": "/bobross/index.html"
-        }
-      ],
-      "previewImage": "images/bobross-back.png"
     },
     {
       "title": "(2021) LifterRun - Marketplace for Personal Training Sessions",

@@ -1,6 +1,8 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useRef } from "react";
 import TradingCard from "./TradingCard";
 import CardCreatorForm from "./CardCreatorForm";
+import { toPng } from "html-to-image";
+import { Download } from "lucide-react";
 import type { CardData } from "../types/card";
 
 const CardCreator: React.FC = () => {
@@ -30,35 +32,59 @@ const CardCreator: React.FC = () => {
   };
 
   const [cardData, setCardData] = useState<CardData>(initialData);
+  const [isExporting, setIsExporting] = useState(false);
+  const cardRef = useRef<HTMLDivElement>(null);
 
   const handleFormUpdate = useCallback((newData: CardData) => {
     setCardData(newData);
   }, []);
 
+  const handleExportPNG = useCallback(async () => {
+    if (!cardRef.current) return;
+
+    setIsExporting(true);
+    try {
+      const dataUrl = await toPng(cardRef.current, {
+        width: 816,
+        height: 1110,
+        pixelRatio: 2, // For higher quality
+      });
+
+      // Create download link
+      const link = document.createElement("a");
+      link.download = `${cardData.name.replace(/\s+/g, "_")}_card.png`;
+      link.href = dataUrl;
+      link.click();
+    } catch (error) {
+      console.error("Failed to export card:", error);
+    } finally {
+      setIsExporting(false);
+    }
+  }, [cardData.name]);
+
   return (
     <div className="min-h-screen bg-gray-100">
-      {/* Header */}
-      <div className="bg-white border-b">
-        <div className="container mx-auto px-4 py-4">
-          <a href="/" className="text-gray-600 hover:text-gray-900">
-            ← Back to justinpoliachik.com
-          </a>
-        </div>
-      </div>
-
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-4xl font-bold text-center mb-8">Card Creator</h1>
 
         <div className="flex flex-col lg:flex-row gap-8 justify-center items-start">
           {/* Card Preview */}
-          <div className="flex justify-center">
-            <div className="scale-75 lg:scale-100 origin-top">
+          <div className="flex flex-col items-center gap-4">
+            <div ref={cardRef} className="scale-75 lg:scale-100 origin-top">
               <TradingCard cardData={cardData} />
             </div>
+            <button
+              onClick={handleExportPNG}
+              disabled={isExporting}
+              className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors"
+            >
+              <Download size={20} />
+              {isExporting ? "Exporting..." : "Export as PNG"}
+            </button>
           </div>
 
-          {/* Form Controls - Made wider from w-96 to w-[480px] */}
-          <div className="w-full lg:w-[480px] bg-white rounded-lg shadow-lg p-6 max-h-[90vh] overflow-y-auto">
+          {/* Form Controls - Made wider to w-[560px] */}
+          <div className="w-full lg:w-[560px] bg-white rounded-lg shadow-lg p-6 max-h-[90vh] overflow-y-auto">
             <h2 className="text-2xl font-bold mb-4">Card Properties</h2>
             <CardCreatorForm initialData={initialData} onUpdate={handleFormUpdate} />
           </div>

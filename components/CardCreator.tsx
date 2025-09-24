@@ -10,7 +10,7 @@ const CardCreator: React.FC = () => {
   const initialData: CardData = {
     name: "Bob and Morty Ross",
     hp: "420",
-    image: "/bob_and_morty_ross.png",
+    image: "https://justinpoliachik.com/images/bob_and_morty_ross.png",
     tagline: "Happy little accidents in every dimension",
     moves: [
       {
@@ -64,15 +64,23 @@ const CardCreator: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-100">
-      <div className="container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold text-center mb-8">Card Creator</h1>
+      <div className="container mx-auto px-4 py-4 md:py-8">
+        <h1 className="text-2xl md:text-4xl font-bold text-center mb-6 md:mb-8">Card Creator</h1>
 
-        <div className="flex flex-col lg:flex-row gap-8 justify-center items-start">
-          {/* Card Preview */}
-          <div className="flex flex-col items-center gap-4">
-            <div ref={cardRef} className="scale-75 lg:scale-100 origin-top">
-              <TradingCard cardData={cardData} />
+        <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 justify-center items-center lg:items-start">
+          {/* Card Preview - On top for mobile, left side for desktop */}
+          <div className="flex flex-col items-center gap-4 w-full lg:w-auto">
+            {/* Card wrapper with responsive height */}
+            <div
+              ref={cardRef}
+              className="relative mx-auto w-full max-w-[367px] h-[500px] sm:max-w-[490px] sm:h-[666px] md:max-w-[612px] md:h-[833px] lg:max-w-none lg:h-auto"
+            >
+              <div className="absolute top-0 left-0 origin-top-left scale-[0.45] sm:scale-[0.6] md:scale-[0.75] lg:scale-[0.85] xl:scale-100 lg:relative lg:origin-top">
+                <TradingCard cardData={cardData} />
+              </div>
             </div>
+
+            {/* Export button */}
             <button
               onClick={handleExportPNG}
               disabled={isExporting}
@@ -83,9 +91,9 @@ const CardCreator: React.FC = () => {
             </button>
           </div>
 
-          {/* Form Controls - Made wider to w-[560px] */}
-          <div className="w-full lg:w-[560px] bg-white rounded-lg shadow-lg p-6 max-h-[90vh] overflow-y-auto">
-            <h2 className="text-2xl font-bold mb-4">Card Properties</h2>
+          {/* Form Controls - Full width on mobile, fixed width on desktop */}
+          <div className="w-full lg:w-[560px] bg-white rounded-lg shadow-lg p-4 md:p-6 lg:max-h-[90vh] lg:overflow-y-auto">
+            <h2 className="text-xl md:text-2xl font-bold mb-4">Card Properties</h2>
             <CardCreatorForm initialData={initialData} onUpdate={handleFormUpdate} />
           </div>
         </div>

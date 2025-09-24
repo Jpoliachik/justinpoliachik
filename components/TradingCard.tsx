@@ -1,31 +1,31 @@
-import React from 'react';
-import type { CardData, CardMove, MoveType, TypeConfig } from '../types/card';
+import React from "react";
+import type { CardData, CardMove, MoveType, TypeConfig } from "../types/card";
 
 const typeConfig: Record<MoveType, TypeConfig> = {
-  nature: { icon: 'tree.svg', color: '#16a34a', name: 'Nature' },
-  fire: { icon: 'flame.svg', color: '#dc2626', name: 'Fire' },
-  psychic: { icon: 'eye.svg', color: '#9333ea', name: 'Psychic' },
-  water: { icon: 'droplet.svg', color: '#2563eb', name: 'Water' },
-  electric: { icon: 'bolt.svg', color: '#eab308', name: 'Electric' },
-  cosmic: { icon: 'spiral.svg', color: '#ec4899', name: 'Cosmic' },
-  toxic: { icon: 'biohazard.svg', color: '#84cc16', name: 'Toxic' },
-  dream: { icon: 'moon.svg', color: '#4f46e5', name: 'Dream' },
-  crystal: { icon: 'gem.svg', color: '#06b6d4', name: 'Crystal' },
-  sound: { icon: 'music.svg', color: '#ea580c', name: 'Sound' },
-  strength: { icon: 'dumbbell.svg', color: '#dc2626', name: 'Strength' },
+  nature: { icon: "tree.svg", color: "#16a34a", name: "Nature" },
+  fire: { icon: "flame.svg", color: "#dc2626", name: "Fire" },
+  psychic: { icon: "eye.svg", color: "#9333ea", name: "Psychic" },
+  water: { icon: "droplet.svg", color: "#2563eb", name: "Water" },
+  electric: { icon: "bolt.svg", color: "#eab308", name: "Electric" },
+  cosmic: { icon: "spiral.svg", color: "#ec4899", name: "Cosmic" },
+  toxic: { icon: "biohazard.svg", color: "#84cc16", name: "Toxic" },
+  dream: { icon: "moon.svg", color: "#4f46e5", name: "Dream" },
+  crystal: { icon: "gem.svg", color: "#06b6d4", name: "Crystal" },
+  sound: { icon: "music.svg", color: "#ea580c", name: "Sound" },
+  strength: { icon: "dumbbell.svg", color: "#dc2626", name: "Strength" },
 };
 
 const backgroundColorMap = {
-  indigo: '#4c1d95',
-  purple: '#6b21a8',
-  green: '#166534',
-  blue: '#1e3a8a',
-  red: '#991b1b',
-  yellow: '#a16207',
-  pink: '#be185d',
-  orange: '#c2410c',
-  teal: '#115e59',
-  cyan: '#155e75',
+  indigo: "#4c1d95",
+  purple: "#6b21a8",
+  green: "#166534",
+  blue: "#1e3a8a",
+  red: "#991b1b",
+  yellow: "#a16207",
+  pink: "#be185d",
+  orange: "#c2410c",
+  teal: "#115e59",
+  cyan: "#155e75",
 };
 
 interface TypeIconsProps {
@@ -44,7 +44,7 @@ const TypeIcons: React.FC<TypeIconsProps> = ({ count, moveType }) => {
       style={{ backgroundColor: currentType.color }}
     >
       <img
-        src={`/card-icons/${currentType.icon}`}
+        src={`/images/card-icons/${currentType.icon}`}
         className="w-6 h-6 filter brightness-0 invert"
         alt={currentType.name}
       />
@@ -74,9 +74,7 @@ const MoveDisplay: React.FC<MoveDisplayProps> = ({ move }) => {
         <TypeIcons count={move.iconCount} moveType={move.type} />
         <div className="flex-1">
           <span className="font-bold text-2xl">{move.title}</span>
-          <div className="mt-1 text-2xl leading-snug">
-            {move.description}
-          </div>
+          <div className="mt-1 text-2xl leading-snug">{move.description}</div>
         </div>
       </div>
       <div className="text-3xl font-bold text-yellow-400">{move.damage}</div>
@@ -93,11 +91,11 @@ const TradingCard: React.FC<TradingCardProps> = ({ cardData }) => {
 
   const getBackgroundStyle = () => {
     if (Array.isArray(backgroundColor) && backgroundColor.length >= 2) {
-      const color1 = backgroundColorMap[backgroundColor[0]] || '#4c1d95';
-      const color2 = backgroundColorMap[backgroundColor[1]] || '#6b21a8';
+      const color1 = backgroundColorMap[backgroundColor[0]] || "#4c1d95";
+      const color2 = backgroundColorMap[backgroundColor[1]] || "#6b21a8";
       return `linear-gradient(to right, ${color1}, ${color2})`;
     } else {
-      const solidColor = backgroundColorMap[backgroundColor as keyof typeof backgroundColorMap] || '#4c1d95';
+      const solidColor = backgroundColorMap[backgroundColor as keyof typeof backgroundColorMap] || "#4c1d95";
       return solidColor;
     }
   };
@@ -110,21 +108,19 @@ const TradingCard: React.FC<TradingCardProps> = ({ cardData }) => {
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/70 via-60% to-black pointer-events-none"></div>
       <div className="relative z-10 flex flex-col px-12 py-14 h-full">
         <div className="flex flex-row justify-between">
-          <div className="px-6 py-2 bg-black border-4 border-yellow-500 rounded-xl font-extrabold text-3xl">
-            {name}
-          </div>
+          <div className="px-6 py-2 bg-black border-4 border-yellow-500 rounded-xl font-extrabold text-3xl">{name}</div>
 
           <div className="flex items-center gap-2">
             <span className="font-extrabold text-2xl">{hp} HP</span>
             {moves.length > 0 && (
               <div
                 className="w-8 h-8 rounded-full flex items-center justify-center"
-                style={{ backgroundColor: typeConfig[moves[0].type || 'nature'].color }}
+                style={{ backgroundColor: typeConfig[moves[0].type || "nature"].color }}
               >
                 <img
-                  src={`/card-icons/${typeConfig[moves[0].type || 'nature'].icon}`}
+                  src={`/images/card-icons/${typeConfig[moves[0].type || "nature"].icon}`}
                   className="w-6 h-6 filter brightness-0 invert"
-                  alt={typeConfig[moves[0].type || 'nature'].name}
+                  alt={typeConfig[moves[0].type || "nature"].name}
                 />
               </div>
             )}
@@ -137,9 +133,7 @@ const TradingCard: React.FC<TradingCardProps> = ({ cardData }) => {
           alt={name}
         />
 
-        <div className="mt-0 py-4 text-center border-y border-slate-500 text-2xl italic">
-          "{tagline}"
-        </div>
+        <div className="mt-0 py-4 text-center border-y border-slate-500 text-2xl italic">"{tagline}"</div>
 
         <div className="mt-2 flex flex-1 flex-col gap-3 justify-center">
           {moves.map((move, index) => (

@@ -12,7 +12,7 @@
       "previewImage": "images/monotype.png"
     },
     {
-      "title": "Card Creator",
+      "title": "Card Creator Tool",
       "description": "Create custom trading cards with real-time preview and export to PNG.",
       "links": [
         {
@@ -20,7 +20,7 @@
           "href": "/card-creator"
         }
       ],
-      "previewImage": "images/bobross-back.png"
+      "previewImage": "images/cardcreator-screenshot.png"
     },
     {
       "title": "Screen Sober",

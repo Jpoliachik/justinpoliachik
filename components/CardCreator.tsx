@@ -97,6 +97,29 @@ const CardCreator: React.FC = () => {
             <CardCreatorForm initialData={initialData} onUpdate={handleFormUpdate} />
           </div>
         </div>
+
+        {/* Info card about physical printing */}
+        <div className="mt-12 mb-8 max-w-3xl mx-auto">
+          <div className="bg-white rounded-lg shadow-lg p-6">
+            <h3 className="text-xl font-bold mb-3">Want physical cards printed?</h3>
+            <p className="text-gray-700 mb-3">
+              You can get your custom cards professionally printed! I recommend{" "}
+              <a
+                href="https://www.makeplayingcards.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline font-medium"
+              >
+                MakePlayingCards.com
+              </a>
+              {" "}where I've ordered cards in the past.
+            </p>
+            <p className="text-gray-600 text-sm">
+              <strong>Print specifications:</strong> Order as "Custom Game Cards" at <strong>63mm × 88mm</strong> (2.48" × 3.46").
+              The exported PNG files are perfectly sized for this format. Other sizes may work but won't have perfect dimensions.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

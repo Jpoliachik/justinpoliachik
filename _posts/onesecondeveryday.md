@@ -27,7 +27,7 @@ I can't imagine what this will feel like far in the future. The value of these a
 
 It's hard to express how grateful I am for having started this project so long ago. I've decided to make my videos up until 2023 public—before Wes arrived and our story became more personal. But I can confidently say this is the most important project I've ever undertaken. One second a day, for as long as I'm able, capturing a life unfolding one moment at a time.
 
-## One Second Everyday Videos
+## One Second Everyday Videos (until 2022)
 
 - [2022](https://youtu.be/aL9zFzJCUZ8)
 - [2021](https://youtu.be/sQlZCkZTYBw)

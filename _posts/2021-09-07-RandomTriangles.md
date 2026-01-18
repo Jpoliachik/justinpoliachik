@@ -1,6 +1,7 @@
 ---
 title: "Random Triangles (p5js)"
 date: "2021-09-07T22:30:00-04:00"
+hidden: true
 ---
 
 Made some generative art today.

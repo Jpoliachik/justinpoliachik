@@ -7,7 +7,6 @@ import { SharedHead } from "../components/SharedHead";
 import { SharedNav } from "../components/SharedNav";
 import { getPostsList, PostSummary } from "../lib/getPosts";
 import { drawSketch } from "../genart/sketches/sketch_2022_abstract_waves";
-import { RecommendationsWidget } from "../components/RecommendationsWidget";
 export default function Home(props: { postsList: PostSummary[] }) {
   return (
     <div>
@@ -20,8 +19,7 @@ export default function Home(props: { postsList: PostSummary[] }) {
           <div id="recentposts" className="section">
             <RecentPosts postsList={props.postsList} />
           </div>
-          <RecommendationsWidget />
-          <div id="projects" className="section">
+                    <div id="projects" className="section">
             <ProjectsList />
           </div>
         </div>

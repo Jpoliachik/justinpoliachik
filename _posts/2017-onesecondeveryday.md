@@ -1,6 +1,7 @@
 ---
 title: "[Video] One Second Everyday - 2017"
 date: "2017-12-31T23:00:00-04:00"
+hidden: true
 ---
 
 [![One Second Everyday 2017](http://img.youtube.com/vi/BMHbYEwRiFE/0.jpg)](http://www.youtube.com/watch?v=BMHbYEwRiFE)

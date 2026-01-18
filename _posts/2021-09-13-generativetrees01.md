@@ -1,6 +1,7 @@
 ---
 title: "Generative Trees (p5js)"
 date: "2021-09-13T23:00:00-04:00"
+hidden: true
 ---
 
 Generative trees using p5.js

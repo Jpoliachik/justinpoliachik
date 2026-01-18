@@ -1,6 +1,7 @@
 ---
 title: "Labor Day Mixtape (Live Mix)"
 date: "2021-09-06T12:30:00-04:00"
+hidden: true
 ---
 
 ![labordaymix-header](/images/labordaymix-header.png)

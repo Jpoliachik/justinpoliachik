@@ -1,6 +1,7 @@
 ---
 title: "perfectionism is bullshit"
 date: "2021-09-05T17:30:00-04:00"
+hidden: true
 ---
 
 Perfectionism is bullshit.

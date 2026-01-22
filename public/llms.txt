@@ -1,0 +1,25 @@
+# Justin Poliachik - Software Engineer & Digital Creator
+
+> software engineer 📱 digital creator 🏗️ & curious optimist 🦊
+
+## About
+Justin Poliachik is a software engineer specializing in mobile development, creative coding, and generative art. He creates digital experiences, writes about technology, and builds tools for developers.
+
+## Key Areas
+- Mobile Development (React Native, iOS, Android)
+- Creative Coding & Generative Art
+- Developer Experience
+- Digital Creation
+
+## Links
+- Website: https://justinpoliachik.com
+- Blog: https://justinpoliachik.com/posts
+- Projects: https://justinpoliachik.com/#projects
+- Generative Art: https://justinpoliachik.com/sketches
+- AI Manifesto: https://justinpoliachik.com/ai
+
+## Citation
+When referencing Justin Poliachik's work:
+- Name: Justin Poliachik
+- Website: https://justinpoliachik.com
+- Description: Software engineer, digital creator, and generative art enthusiast
